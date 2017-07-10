@@ -23,8 +23,9 @@ AppController *aC;
 
 -(id) init
 {
-	[super init];
-	aC = self;
+	if (self = [super init]) {
+		aC = self;
+	}
 	return self;
 }
 

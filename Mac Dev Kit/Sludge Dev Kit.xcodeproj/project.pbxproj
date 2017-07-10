@@ -30,8 +30,6 @@
 		2F373F70100E0686009F6880 /* project.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F373F6E100E0686009F6880 /* project.cpp */; };
 		2F46989A101B4ACA00D451DB /* slx.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2F469899101B4ACA00D451DB /* slx.icns */; };
 		2F59AFFF100CD9E1004A21BC /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F59AFFE100CD9E1004A21BC /* Carbon.framework */; };
-		2F59E734102E22CA00008746 /* libpng.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F59E72D102E22A900008746 /* libpng.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		2F59E74E102E248C00008746 /* libpng.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F59E72D102E22A900008746 /* libpng.framework */; };
 		2F6092621010729500BC0F94 /* interface.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F6092611010729500BC0F94 /* interface.h */; };
 		2F61A6FD100F50D000EBE4B0 /* compiler.hpp in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F61A6FB100F50D000EBE4B0 /* compiler.hpp */; };
 		2F61A6FE100F50D000EBE4B0 /* compiler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F61A6FC100F50D000EBE4B0 /* compiler.cpp */; };
@@ -107,6 +105,8 @@
 		2FF7AE531012195300F6AF98 /* SpriteBank.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7AE511012195300F6AF98 /* SpriteBank.m */; };
 		2FF7AE5D10121A0700F6AF98 /* SpriteBank.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7AE5C10121A0700F6AF98 /* SpriteBank.nib */; };
 		55C301151F1304BD0049C4C3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55C301171F1304BD0049C4C3 /* InfoPlist.strings */; };
+		55C301421F131A060049C4C3 /* libpng.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C301331F1319640049C4C3 /* libpng.framework */; };
+		55C301431F131A060049C4C3 /* libpng.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 55C301331F1319640049C4C3 /* libpng.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		E80D9E7F12C9E6C800663154 /* SLUDGE Document.m in Sources */ = {isa = PBXBuildFile; fileRef = E80D9E7E12C9E6C800663154 /* SLUDGE Document.m */; };
 		E839AAD412D739B1007DD503 /* helpers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E839AAD212D739B1007DD503 /* helpers.cpp */; };
@@ -115,6 +115,86 @@
 		E8F4F7A5132B8877000F35A9 /* stringarray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8F4F7A3132B8877000F35A9 /* stringarray.cpp */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		55C3012E1F1319640049C4C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55C301181F1319630049C4C3 /* libpng.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CE5EC460CF32484EBCA9BBF3;
+			remoteInfo = png;
+		};
+		55C301301F1319640049C4C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55C301181F1319630049C4C3 /* libpng.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE0E208EE7564CE29100B752;
+			remoteInfo = "png-fix-itxt";
+		};
+		55C301321F1319640049C4C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55C301181F1319630049C4C3 /* libpng.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6C25220BE5B143AB9B6E4EA0;
+			remoteInfo = png_framework;
+		};
+		55C301341F1319640049C4C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55C301181F1319630049C4C3 /* libpng.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C39619B3E7A48439AEBF6F5;
+			remoteInfo = png_static;
+		};
+		55C301361F1319640049C4C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55C301181F1319630049C4C3 /* libpng.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D70A9E262C3E484A82ED938D;
+			remoteInfo = pngfix;
+		};
+		55C301381F1319640049C4C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55C301181F1319630049C4C3 /* libpng.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F7111489973A4B60B45ED779;
+			remoteInfo = pngimage;
+		};
+		55C3013A1F1319640049C4C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55C301181F1319630049C4C3 /* libpng.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A9778514A2D94FDEAC79324A;
+			remoteInfo = pngstest;
+		};
+		55C3013C1F1319640049C4C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55C301181F1319630049C4C3 /* libpng.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 98527F56B89D4BC8B8D5ABAF;
+			remoteInfo = pngtest;
+		};
+		55C3013E1F1319640049C4C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55C301181F1319630049C4C3 /* libpng.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ACFF5EEB1A3448918AE9363C;
+			remoteInfo = pngunknown;
+		};
+		55C301401F1319640049C4C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55C301181F1319630049C4C3 /* libpng.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FF1F30E968D2471BAD978548;
+			remoteInfo = pngvalid;
+		};
+		55C301441F131A060049C4C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55C301181F1319630049C4C3 /* libpng.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DB7B162D9EDD435B8CDA5AB4;
+			remoteInfo = png_framework;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		002F39FD09D0883400EBEB88 /* Copy Frameworks into .app bundle */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -122,7 +202,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2F59E734102E22CA00008746 /* libpng.framework in Copy Frameworks into .app bundle */,
 				2F7EA3E50FFCEBCF005E5C36 /* functionlist.h in Copy Frameworks into .app bundle */,
 				2F7EA3E90FFCEBCF005E5C36 /* specialsettings.h in Copy Frameworks into .app bundle */,
 				2F7EA3EB0FFCEBCF005E5C36 /* tga.h in Copy Frameworks into .app bundle */,
@@ -140,6 +219,7 @@
 				2F7EA4BF0FFCEBE6005E5C36 /* realproc.h in Copy Frameworks into .app bundle */,
 				2F7EA4CA0FFCEBE6005E5C36 /* tokens.h in Copy Frameworks into .app bundle */,
 				2F7EA4CC0FFCEBE6005E5C36 /* translation.h in Copy Frameworks into .app bundle */,
+				55C301431F131A060049C4C3 /* libpng.framework in Copy Frameworks into .app bundle */,
 				2F7EA4CD0FFCEBE6005E5C36 /* typedef.h in Copy Frameworks into .app bundle */,
 				2F7EA4EF0FFCEBE6005E5C36 /* launch.h in Copy Frameworks into .app bundle */,
 				2F7EA5060FFCEBE6005E5C36 /* savedata.h in Copy Frameworks into .app bundle */,
@@ -173,9 +253,9 @@
 		002F3A2B09D0888800EBEB88 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		002F3A2C09D0888800EBEB88 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
 		002F3AF009D08F1000EBEB88 /* DevKit Main.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = "DevKit Main.nib"; sourceTree = "<group>"; };
-		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
-		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2F03811A102AEF2F00EDBAFB /* translator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = translator.h; path = ../source/DevKit/TranslationEditor/translator.h; sourceTree = "<group>"; };
 		2F03811B102AEF2F00EDBAFB /* translator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = translator.cpp; path = ../source/DevKit/TranslationEditor/translator.cpp; sourceTree = "<group>"; };
 		2F1505EB101DCDE4006F9068 /* FloorDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloorDocument.h; sourceTree = "<group>"; };
@@ -194,8 +274,7 @@
 		2F373F6D100E0686009F6880 /* project.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = project.hpp; path = ../source/DevKit/ProjectManager/project.hpp; sourceTree = "<group>"; };
 		2F373F6E100E0686009F6880 /* project.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = project.cpp; path = ../source/DevKit/ProjectManager/project.cpp; sourceTree = "<group>"; };
 		2F469899101B4ACA00D451DB /* slx.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = slx.icns; path = ../images/slx.icns; sourceTree = SOURCE_ROOT; };
-		2F59AFFE100CD9E1004A21BC /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/Carbon.framework; sourceTree = DEVELOPER_DIR; };
-		2F59E72D102E22A900008746 /* libpng.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libpng.framework; path = "../../libpng-1.2.38/projects/xcode/build/Release/libpng.framework"; sourceTree = SOURCE_ROOT; };
+		2F59AFFE100CD9E1004A21BC /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 		2F6092611010729500BC0F94 /* interface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = interface.h; path = ../source/DevKit/Common/interface.h; sourceTree = "<group>"; };
 		2F61A6FB100F50D000EBE4B0 /* compiler.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = compiler.hpp; path = ../source/DevKit/Compiler/compiler.hpp; sourceTree = "<group>"; };
 		2F61A6FC100F50D000EBE4B0 /* compiler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = compiler.cpp; path = ../source/DevKit/Compiler/compiler.cpp; sourceTree = "<group>"; };
@@ -266,11 +345,12 @@
 		2FDE2F381030DEE200FAAA65 /* floormodeicon4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = floormodeicon4.png; path = ../images/floormodeicon4.png; sourceTree = SOURCE_ROOT; };
 		2FDE2F3A1030DEE700FAAA65 /* floormodeicon5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = floormodeicon5.png; path = ../images/floormodeicon5.png; sourceTree = SOURCE_ROOT; };
 		2FE2619E1010BD5D005EF966 /* hsi.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = hsi.h; path = ../source/DevKit/Compiler/hsi.h; sourceTree = "<group>"; };
-		2FE2CEC30FFD683B000CC795 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		2FE2CEC30FFD683B000CC795 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		2FF7AE501012195300F6AF98 /* SpriteBank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteBank.h; sourceTree = "<group>"; };
 		2FF7AE511012195300F6AF98 /* SpriteBank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpriteBank.m; sourceTree = "<group>"; };
 		2FF7AE5C10121A0700F6AF98 /* SpriteBank.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = SpriteBank.nib; sourceTree = "<group>"; };
 		55C301161F1304BD0049C4C3 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		55C301181F1319630049C4C3 /* libpng.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libpng.xcodeproj; path = "../../libpng-1.6.30/libpng.xcodeproj"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Sludge Dev Kit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sludge Dev Kit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E80D9E7D12C9E6C800663154 /* SLUDGE Document.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SLUDGE Document.h"; sourceTree = "<group>"; };
 		E80D9E7E12C9E6C800663154 /* SLUDGE Document.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SLUDGE Document.m"; sourceTree = "<group>"; };
@@ -289,7 +369,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F59E74E102E248C00008746 /* libpng.framework in Frameworks */,
+				55C301421F131A060049C4C3 /* libpng.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				2FE2CEC40FFD683B000CC795 /* OpenGL.framework in Frameworks */,
 				2F59AFFF100CD9E1004A21BC /* Carbon.framework in Frameworks */,
@@ -397,7 +477,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2F59E72D102E22A900008746 /* libpng.framework */,
+				55C301181F1319630049C4C3 /* libpng.xcodeproj */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
@@ -426,6 +506,23 @@
 			name = CommonCode;
 			path = ../source/CommonCode;
 			sourceTree = SOURCE_ROOT;
+		};
+		55C301191F1319630049C4C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55C3012F1F1319640049C4C3 /* libpng16.dylib */,
+				55C301311F1319640049C4C3 /* png-fix-itxt */,
+				55C301331F1319640049C4C3 /* libpng.framework */,
+				55C301351F1319640049C4C3 /* libpng16.a */,
+				55C301371F1319640049C4C3 /* pngfix */,
+				55C301391F1319640049C4C3 /* pngimage */,
+				55C3013B1F1319640049C4C3 /* pngstest */,
+				55C3013D1F1319640049C4C3 /* pngtest */,
+				55C3013F1F1319640049C4C3 /* pngunknown */,
+				55C301411F1319640049C4C3 /* pngvalid */,
+			);
+			name = Products;
+			sourceTree = "<group>";
 		};
 		E83C1BC412C27715002F19D7 /* Dev Kit */ = {
 			isa = PBXGroup;
@@ -499,6 +596,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				55C301451F131A060049C4C3 /* PBXTargetDependency */,
 			);
 			name = "SLUDGE Dev Kit";
 			productInstallPath = "$(HOME)/Applications";
@@ -526,12 +624,93 @@
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* Sludge Dev Kit */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 55C301191F1319630049C4C3 /* Products */;
+					ProjectRef = 55C301181F1319630049C4C3 /* libpng.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8D1107260486CEB800E47090 /* SLUDGE Dev Kit */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		55C3012F1F1319640049C4C3 /* libpng16.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			name = libpng16.dylib;
+			path = libpng16d.16.30.0.dylib;
+			remoteRef = 55C3012E1F1319640049C4C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55C301311F1319640049C4C3 /* png-fix-itxt */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "png-fix-itxt";
+			remoteRef = 55C301301F1319640049C4C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55C301331F1319640049C4C3 /* libpng.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = libpng.framework;
+			remoteRef = 55C301321F1319640049C4C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55C301351F1319640049C4C3 /* libpng16.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			name = libpng16.a;
+			path = libpng16d.a;
+			remoteRef = 55C301341F1319640049C4C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55C301371F1319640049C4C3 /* pngfix */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = pngfix;
+			remoteRef = 55C301361F1319640049C4C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55C301391F1319640049C4C3 /* pngimage */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = pngimage;
+			remoteRef = 55C301381F1319640049C4C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55C3013B1F1319640049C4C3 /* pngstest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = pngstest;
+			remoteRef = 55C3013A1F1319640049C4C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55C3013D1F1319640049C4C3 /* pngtest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = pngtest;
+			remoteRef = 55C3013C1F1319640049C4C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55C3013F1F1319640049C4C3 /* pngunknown */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = pngunknown;
+			remoteRef = 55C3013E1F1319640049C4C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55C301411F1319640049C4C3 /* pngvalid */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = pngvalid;
+			remoteRef = 55C301401F1319640049C4C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8D1107290486CEB800E47090 /* Resources */ = {
@@ -613,6 +792,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		55C301451F131A060049C4C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = png_framework;
+			targetProxy = 55C301441F131A060049C4C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		55C301171F1304BD0049C4C3 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -631,16 +818,16 @@
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../libpng-1.2.38/projects/xcode/build/Release\"";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hungrysoftware.SludgeDevKit;
 				PRODUCT_NAME = "Sludge Dev Kit";
 				WRAPPER_EXTENSION = app;
@@ -652,14 +839,15 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/../../libpng-1.2.38/projects/xcode/build/Release\"";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hungrysoftware.SludgeDevKit;
 				PRODUCT_NAME = "Sludge Dev Kit";
 				WRAPPER_EXTENSION = app;
@@ -671,24 +859,24 @@
 			buildSettings = {
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CURRENT_PROJECT_VERSION = 105;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(HOME)/Library/Frameworks",
 					/Library/Frameworks,
 					"$(FRAMEWORK_SEARCH_PATHS)",
 				);
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_VERSION = 4.0;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_MISSING_PARENTHESES = NO;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_PARAMETER = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					"../../libpng-1.2.38/projects/xcode/build/Release/libpng.framework/Headers",
+					"$(BUILT_PRODUCTS_DIR)/libpng.framework/Headers",
 					"$(HOME)/Library/Frameworks/SDL.framework/Headers",
 					/Library/Frameworks/SDL.framework/Headers,
-					"$(HEADER_SEARCH_PATHS)",
+					"$(inherited)",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
@@ -703,23 +891,23 @@
 			buildSettings = {
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CURRENT_PROJECT_VERSION = 106;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(HOME)/Library/Frameworks",
 					/Library/Frameworks,
 					"$(FRAMEWORK_SEARCH_PATHS)",
 				);
 				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_VERSION = 4.0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_MISSING_PARENTHESES = NO;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_PARAMETER = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					"../../libpng-1.2.38/projects/xcode/build/Release/libpng.framework/Headers",
+					"$(BUILT_PRODUCTS_DIR)/libpng.framework/Headers",
 					"$(HOME)/Library/Frameworks/SDL.framework/Headers",
 					/Library/Frameworks/SDL.framework/Headers,
-					"$(HEADER_SEARCH_PATHS)",
+					"$(inherited)",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				SDKROOT = macosx;

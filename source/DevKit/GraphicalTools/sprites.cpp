@@ -1118,7 +1118,7 @@ bool convertSpriteBank8to32 (struct spriteBank *sprites) {
 			while (--i >= 0) {
 				delete newsprites[i].data;
 			}
-			delete newsprites;
+			delete[] newsprites;
 			return errorBox ("Can't convert sprite bank", "Out of memory.");
 		}
 		unsigned char s;
