@@ -263,7 +263,7 @@ int main (int argc, char *argv[])
         gFinderLaunch = NO;
     }
 
-    [SDLApplication poseAsClass:[NSApplication class]];
+    //[SDLApplication poseAsClass:[NSApplication class]];
     NSApplicationMain (argc, (const char **) argv);
     return 0;
 }
@@ -276,7 +276,7 @@ int main (int argc, char *argv[])
 
 
 int showSetupWindow() {
-	int result;
+	NSInteger result;
 	
 	usingCocoa = true;
 
@@ -295,7 +295,7 @@ int showSetupWindow() {
 
 char * grabFileName () {
 	
-	int result;
+	NSInteger result;
 	
 	usingCocoa = true;
 
@@ -308,9 +308,9 @@ char * grabFileName () {
 	
 	usingCocoa = false;
 	
-	if( result == NSOKButton && [[oPanel filenames] count] > 0 ) {
+	if( result == NSOKButton && [[oPanel URLs] count] > 0 ) {
 		NSString *filename = [[oPanel filenames] objectAtIndex: 0];
-		return copyString( [filename UTF8String] );
+		return copyString( [filename fileSystemRepresentation] );
     }
 	
 	return NULL;
@@ -321,7 +321,7 @@ char * grabFileName () {
 void msgBox (const char * head, const char * msg) {
 // stringWithUTF8String?
 	usingCocoa = true;
-	NSRunAlertPanel ([NSString stringWithUTF8String: head], [NSString stringWithUTF8String: msg], NULL, NULL, NULL);
+	NSRunAlertPanel ([NSString stringWithUTF8String: head], @"%@", NULL, NULL, NULL, [NSString stringWithUTF8String: msg]);
 	usingCocoa = false;
 }
 

@@ -64,7 +64,7 @@ unsigned int get2bytes (FILE * fp) {
 }
 
 void deleteString(char * s) {
-	delete s;
+	delete[] s;
 }
 
 char * copyString (const char * c) {

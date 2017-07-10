@@ -510,7 +510,7 @@ bool loadGame (char * fname) {
 	fgetc (fp); // updateDisplay (part of movie playing)
 
 	bool fontLoaded = fgetc (fp);
-	int fontNum;
+	int fontNum = 0;
 	char * charOrder;
 	if (fontLoaded) {
 		fontNum = get2bytes (fp);

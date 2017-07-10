@@ -13,7 +13,7 @@
 @interface stringTable : NSTableView {
 	int type;
 }
-- (void) setType:(int)i;
+@property int type;
 @end
 
 @interface TranslationDocument : SLUDGE_Document {

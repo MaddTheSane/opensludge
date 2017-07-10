@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2F3AB888100CF97C00CD6A13 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 2F3AB887100CF97C00CD6A13 /* Credits.html */; };
 		2F59E738102E230800008746 /* libpng.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F59E737102E230800008746 /* libpng.framework */; };
-		2F59E748102E246100008746 /* libpng.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F59E737102E230800008746 /* libpng.framework */; };
+		2F59E748102E246100008746 /* libpng.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F59E737102E230800008746 /* libpng.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		2F6274FC10EA337700BBDEDF /* shaders.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F6274FA10EA337700BBDEDF /* shaders.h */; };
 		2F6274FD10EA337700BBDEDF /* shaders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F6274FB10EA337700BBDEDF /* shaders.cpp */; };
 		2F684E1A0FFEAF6700EED6FE /* gameicon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2F684E190FFEAF6700EED6FE /* gameicon.icns */; };
@@ -99,6 +99,7 @@
 		2FB1C3C40FAB4C7900718E0C /* graphics.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2FB1C3C30FAB4C7900718E0C /* graphics.h */; };
 		2FEFC49C10073ADA004C66F1 /* GLee.c in Sources */ = {isa = PBXBuildFile; fileRef = 2FEFC49A10073ADA004C66F1 /* GLee.c */; };
 		2FEFC49D10073ADA004C66F1 /* GLee.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2FEFC49B10073ADA004C66F1 /* GLee.h */; };
+		55FA0E991F13EF730095D165 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FA0E981F13EF730095D165 /* libiconv.tbd */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		E8022077131AA1490018F754 /* movie.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8022076131AA1490018F754 /* movie.cpp */; };
 		E814021D131D28AA00CCA8EC /* AUTHORS.TXT in Resources */ = {isa = PBXBuildFile; fileRef = E8140216131D28AA00CCA8EC /* AUTHORS.TXT */; };
@@ -110,14 +111,13 @@
 		E86EDFEF164FC83B008CBEEC /* libvorbisfile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E86EDFEE164FC83B008CBEEC /* libvorbisfile.a */; };
 		E86EDFF1164FC84B008CBEEC /* libFLAC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E86EDFF0164FC84B008CBEEC /* libFLAC.a */; };
 		E86EDFF7164FC998008CBEEC /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86EDFF6164FC998008CBEEC /* OpenAL.framework */; };
-		E86EE006164FD4A0008CBEEC /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E86EE005164FD4A0008CBEEC /* libiconv.dylib */; };
 		E86EE00A164FD788008CBEEC /* libalure-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E86EE009164FD788008CBEEC /* libalure-static.a */; };
 		E86EE00E164FE372008CBEEC /* libsndfile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E86EE00D164FE372008CBEEC /* libsndfile.a */; };
 		E89D32F814059706004FC507 /* helpers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E89D32F614059706004FC507 /* helpers.cpp */; };
 		E8C9413F1466DB6A00B9BD26 /* utf8.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8C9413D1466DB6A00B9BD26 /* utf8.cpp */; };
 		E8CA57A9111D9EDF00E971B4 /* sound_openal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8981D35111A2A8500762C10 /* sound_openal.cpp */; };
 		E8D5A5E01712C007006698FE /* SDL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D5A5DF1712C007006698FE /* SDL.framework */; };
-		E8D5A5E11712C13C006698FE /* SDL.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = E8D5A5DF1712C007006698FE /* SDL.framework */; };
+		E8D5A5E11712C13C006698FE /* SDL.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = E8D5A5DF1712C007006698FE /* SDL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		E8D761481128A5A900A5F7D7 /* libdumb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D761421128A5A900A5F7D7 /* libdumb.a */; };
 		E8D7614A1128A5A900A5F7D7 /* libogg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D761441128A5A900A5F7D7 /* libogg.a */; };
 		E8D7614B1128A5A900A5F7D7 /* libvorbis.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D761451128A5A900A5F7D7 /* libvorbis.a */; };
@@ -207,9 +207,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
-		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2F3AB887100CF97C00CD6A13 /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; name = Credits.html; path = ../doc/Credits.html; sourceTree = SOURCE_ROOT; };
 		2F59E737102E230800008746 /* libpng.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libpng.framework; path = "../../libpng-1.2.38/projects/xcode/build/Release/libpng.framework"; sourceTree = SOURCE_ROOT; };
 		2F6274FA10EA337700BBDEDF /* shaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = shaders.h; path = ../source/Engine/shaders.h; sourceTree = SOURCE_ROOT; };
@@ -238,7 +238,7 @@
 		2F7BFED60E33855C003F5DC3 /* objtypes.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = objtypes.cpp; path = ../source/Engine/objtypes.cpp; sourceTree = SOURCE_ROOT; };
 		2F7BFED80E338563003F5DC3 /* people.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = people.cpp; path = ../source/Engine/people.cpp; sourceTree = SOURCE_ROOT; };
 		2F7BFEDA0E33856C003F5DC3 /* region.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = region.cpp; path = ../source/Engine/region.cpp; sourceTree = SOURCE_ROOT; };
-		2F7BFEE00E338583003F5DC3 /* savedata.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = savedata.cpp; path = ../source/Engine/savedata.cpp; sourceTree = SOURCE_ROOT; };
+		2F7BFEE00E338583003F5DC3 /* savedata.cpp */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = sourcecode.cpp.cpp; name = savedata.cpp; path = ../source/Engine/savedata.cpp; sourceTree = SOURCE_ROOT; };
 		2F7BFEE20E33858E003F5DC3 /* sludger.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = sludger.cpp; path = ../source/Engine/sludger.cpp; sourceTree = SOURCE_ROOT; };
 		2F7BFEE40E3385B3003F5DC3 /* sound_bass.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = sound_bass.cpp; path = ../source/Engine/sound_bass.cpp; sourceTree = SOURCE_ROOT; };
 		2F7BFEE60E3385F8003F5DC3 /* sprbanks.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = sprbanks.cpp; path = ../source/Engine/sprbanks.cpp; sourceTree = SOURCE_ROOT; };
@@ -293,7 +293,7 @@
 		2F7BFF590E3387CE003F5DC3 /* version.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = version.h; path = ../source/CommonCode/version.h; sourceTree = SOURCE_ROOT; };
 		2F7BFF5C0E33880C003F5DC3 /* winstuff.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = winstuff.h; path = ../source/Engine/winstuff.h; sourceTree = SOURCE_ROOT; };
 		2F7BFF5D0E33880C003F5DC3 /* zbuffer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = zbuffer.h; path = ../source/Engine/zbuffer.h; sourceTree = SOURCE_ROOT; };
-		2F83725A0E5042FA00CC8352 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		2F83725A0E5042FA00CC8352 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		2F9B3FBB0F557405003B4998 /* Sludge.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = Sludge.icns; path = ../images/Sludge.icns; sourceTree = SOURCE_ROOT; };
 		2FA5507A0FF90CC4006A67ED /* Start.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Start.h; sourceTree = "<group>"; };
 		2FA5507B0FF90CC4006A67ED /* Start.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Start.m; sourceTree = "<group>"; };
@@ -302,6 +302,7 @@
 		2FB1C3C30FAB4C7900718E0C /* graphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = graphics.h; path = ../source/Engine/graphics.h; sourceTree = SOURCE_ROOT; };
 		2FEFC49A10073ADA004C66F1 /* GLee.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = GLee.c; path = ../GLee/GLee.c; sourceTree = SOURCE_ROOT; };
 		2FEFC49B10073ADA004C66F1 /* GLee.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = GLee.h; path = ../GLee/GLee.h; sourceTree = SOURCE_ROOT; };
+		55FA0E981F13EF730095D165 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		8D1107320486CEB800E47090 /* SLUDGE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLUDGE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8022075131AA1490018F754 /* movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = movie.h; path = ../source/Engine/movie.h; sourceTree = SOURCE_ROOT; };
 		E8022076131AA1490018F754 /* movie.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = movie.cpp; path = ../source/Engine/movie.cpp; sourceTree = SOURCE_ROOT; };
@@ -317,8 +318,7 @@
 		E836739E1101D9E2001449BC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E86EDFEE164FC83B008CBEEC /* libvorbisfile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvorbisfile.a; path = ../libs/libvorbisfile.a; sourceTree = "<group>"; };
 		E86EDFF0164FC84B008CBEEC /* libFLAC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFLAC.a; path = ../libs/libFLAC.a; sourceTree = "<group>"; };
-		E86EDFF6164FC998008CBEEC /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/OpenAL.framework; sourceTree = DEVELOPER_DIR; };
-		E86EE005164FD4A0008CBEEC /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = ../../../../../usr/lib/libiconv.dylib; sourceTree = "<group>"; };
+		E86EDFF6164FC998008CBEEC /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		E86EE009164FD788008CBEEC /* libalure-static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libalure-static.a"; path = "../libs/libalure-static.a"; sourceTree = "<group>"; };
 		E86EE00D164FE372008CBEEC /* libsndfile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsndfile.a; path = ../../../../../usr/local/lib/libsndfile.a; sourceTree = "<group>"; };
 		E8981D35111A2A8500762C10 /* sound_openal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sound_openal.cpp; path = ../source/Engine/sound_openal.cpp; sourceTree = SOURCE_ROOT; };
@@ -350,6 +350,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55FA0E991F13EF730095D165 /* libiconv.tbd in Frameworks */,
 				E8D5A5E01712C007006698FE /* SDL.framework in Frameworks */,
 				2F59E738102E230800008746 /* libpng.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
@@ -362,7 +363,6 @@
 				E86EDFEF164FC83B008CBEEC /* libvorbisfile.a in Frameworks */,
 				E86EDFF1164FC84B008CBEEC /* libFLAC.a in Frameworks */,
 				E86EDFF7164FC998008CBEEC /* OpenAL.framework in Frameworks */,
-				E86EE006164FD4A0008CBEEC /* libiconv.dylib in Frameworks */,
 				E86EE00A164FD788008CBEEC /* libalure-static.a in Frameworks */,
 				E86EE00E164FE372008CBEEC /* libsndfile.a in Frameworks */,
 			);
@@ -457,6 +457,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				55FA0E981F13EF730095D165 /* libiconv.tbd */,
 				E8D5A5DF1712C007006698FE /* SDL.framework */,
 				2F59E737102E230800008746 /* libpng.framework */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
@@ -572,7 +573,6 @@
 			isa = PBXGroup;
 			children = (
 				E86EE00D164FE372008CBEEC /* libsndfile.a */,
-				E86EE005164FD4A0008CBEEC /* libiconv.dylib */,
 				E86EE009164FD788008CBEEC /* libalure-static.a */,
 				E832EDCB131D522B005AE714 /* libvpx.a */,
 				E8D761421128A5A900A5F7D7 /* libdumb.a */,
@@ -633,6 +633,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = SLUDGE;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Sludge Engine" */;
@@ -759,10 +760,6 @@
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -798,6 +795,7 @@
 					"\"$(SRCROOT)/../alure-1.2/build\"",
 				);
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/../libs\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hungrysoftware.Sludge;
 				PRODUCT_NAME = SLUDGE;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = YES;
@@ -807,10 +805,6 @@
 		C01FCF4C08A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					i386,
-					ppc,
-				);
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
@@ -843,6 +837,7 @@
 					"\"$(SRCROOT)/../alure-1.2/build\"",
 				);
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/../libs\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hungrysoftware.Sludge;
 				PRODUCT_NAME = SLUDGE;
 				WRAPPER_EXTENSION = app;
 			};
@@ -851,7 +846,20 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CURRENT_PROJECT_VERSION = 104;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(HOME)/Library/Frameworks",
 					/Library/Frameworks,
@@ -861,8 +869,12 @@
 				GCC_ENABLE_SSE3_EXTENSIONS = YES;
 				GCC_FORCE_CPU_SUBTYPE_ALL = YES;
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
@@ -878,11 +890,11 @@
 					../libs,
 					"$(inherited)",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
-				OTHER_LDFLAGS = /Developer/SDKs/MacOSX10.5.sdk/usr/lib/libiconv.dylib;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
 				PRODUCT_NAME = OpenSLUDGE;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx;
 				USER_HEADER_SEARCH_PATHS = "/Users/rikard/Documents/SLUDGE/bass24-osx $(inherited)";
 				VERSIONING_SYSTEM = "";
 			};
@@ -891,8 +903,19 @@
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CURRENT_PROJECT_VERSION = 104;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(HOME)/Library/Frameworks",
 					/Library/Frameworks,
@@ -902,8 +925,12 @@
 				GCC_ENABLE_SSE3_EXTENSIONS = YES;
 				GCC_FORCE_CPU_SUBTYPE_ALL = YES;
 				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
@@ -919,11 +946,10 @@
 					../libs,
 					"$(inherited)",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
-				OTHER_LDFLAGS = /Developer/SDKs/MacOSX10.5.sdk/usr/lib/libiconv.dylib;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PREBINDING = NO;
 				PRODUCT_NAME = OpenSLUDGE;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx;
 				USER_HEADER_SEARCH_PATHS = "/Users/rikard/Documents/SLUDGE/bass24-osx $(inherited)";
 				VERSIONING_SYSTEM = "";
 			};

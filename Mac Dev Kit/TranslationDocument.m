@@ -15,6 +15,7 @@
 
 
 @implementation stringTable
+@synthesize type;
 
 // We override this function to make the Return key work properly even though
 // we remove rows from the list when they're edited. (NSTableView doesn't expect that.)
@@ -38,14 +39,6 @@
 		[super textDidEndEditing: aNotification];
 }
 
-- (void) setType:(int)i
-{
-	type = i;
-}
-- (int) type
-{
-	return type;
-}
 @end
 
 @implementation TranslationDocument
@@ -63,7 +56,7 @@
     [super windowControllerDidLoadNib:aController];
     // Add any code here that needs to be executed once the windowController has loaded the document's window.
 	
-	if (langName) [languageName setStringValue: [NSString stringWithUTF8String: langName]];
+	if (langName) [languageName setStringValue: @(langName)];
 	if (langID) [languageID setIntValue:langID];
 }
 
@@ -90,13 +83,10 @@
 			 error:(NSError **)outError
 {
 	if ([typeName isEqualToString:@"SLUDGE Translation file"]) {		
-		UInt8 buffer[1024];
-		if (CFURLGetFileSystemRepresentation((CFURLRef) absoluteURL, true, buffer, 1023)) {
-			if (saveTranslationFile ((char *) buffer, firstTransLine, langName, langID)) {
-				return YES;
-			}
+		if (saveTranslationFile (absoluteURL.fileSystemRepresentation, firstTransLine, langName, langID)) {
+			return YES;
 		}
-	} 
+	}
 	*outError = [NSError errorWithDomain:@"Error" code:1 userInfo:nil];
 	return NO;
 }
