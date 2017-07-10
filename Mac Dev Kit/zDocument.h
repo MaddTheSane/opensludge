@@ -24,15 +24,17 @@
 #import <Cocoa/Cocoa.h>
 #include "sprites.h"
 
+@class zDocument;
+
 @interface zOpenGLView : NSOpenGLView
 {
 	struct spriteBank *backdrop;
 
-	id doc;
+	__unsafe_unretained zDocument *doc;
 	int x, y, w, h;
 	float z, zmul;
 }
-- (void) connectToDoc: (id) myDoc;
+- (void) connectToDoc: (zDocument*) myDoc;
 - (void) drawRect: (NSRect) bounds ;
 @end
 
@@ -50,9 +52,7 @@
 	int bufferY;
 }
 @property (nonatomic) int buffer;
-
-- (int) bufferY;
-- (void) setBufferY: (int)i;
+@property (nonatomic) int bufferY;
 
 //- (IBAction)setBufferY:(id)sender;
 

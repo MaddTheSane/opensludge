@@ -73,9 +73,9 @@
 			  error:(NSError **)outError
 {
 	if ([typeName isEqualToString:@"SLUDGE Translation file"]) {	
-		UInt8 buffer[1024];
-		if (CFURLGetFileSystemRepresentation((CFURLRef) absoluteURL, true, buffer, 1023)) {
-			if (loadTranslationFile ((char *) buffer, &firstTransLine, &langName, &langID)) {
+		char buffer[1024];
+		if (CFURLGetFileSystemRepresentation((CFURLRef) absoluteURL, true, (UInt8*)buffer, 1023)) {
+			if (loadTranslationFile(buffer, &firstTransLine, &langName, &langID)) {
 				[listOfStrings noteNumberOfRowsChanged];
 				return YES;
 			}
@@ -116,18 +116,25 @@
 	while (line) {
 		switch (type) {
 			case 0:
-				if (line->type == TYPE_NEW) c++; break;
+				if (line->type == TYPE_NEW)
+					c++;
+				break;
 			case 2:
-				if (line->type == TYPE_TRANS) c++; break;
+				if (line->type == TYPE_TRANS)
+					c++;
+				break;
 			case 3:
-				if (line->type == TYPE_NONE) c++; break;
+				if (line->type == TYPE_NONE)
+					c++;
+				break;
 			default:
-			c++;
+				c++;
 		}
 		line = line->next;
 	}
 	return c;
 }
+
 - (id)tableView:(stringTable *)tv
 	objectValueForTableColumn:(NSTableColumn *)tableColumn
 			row:(int)row
@@ -238,16 +245,16 @@
 - (IBAction)loadStrings:(id)sender {
 	SLUDGE_Document *doc = [[NSDocumentController sharedDocumentController] currentDocument];
 	ProjectDocument *p = (ProjectDocument *)[doc project];
-
+	
 	if (p) {
 		if (updateFromProject ([[p fileURL] fileSystemRepresentation], &firstTransLine)) {
 			
 			[listOfStrings noteNumberOfRowsChanged];
 			[self updateChangeCount: NSChangeDone];
 			NSRunAlertPanel ([p getTitle], @"Strings updated.", NULL, NULL, NULL);
-		}		
+		}
+		
 	} else {
-	
 		NSOpenPanel *openPanel = [ NSOpenPanel openPanel ];
 		[openPanel setTitle:@"Select a SLUDGE Project"];
 		NSArray *files = [NSArray arrayWithObjects:@"slp", nil];
@@ -256,7 +263,6 @@
 		if ( [ openPanel runModal] == NSFileHandlingPanelOKButton) {
 			NSURL *path = [openPanel URL];
 			if (updateFromProject ([path fileSystemRepresentation], &firstTransLine)) {
-				
 				[listOfStrings noteNumberOfRowsChanged];
 				[self updateChangeCount: NSChangeDone];
 			}
@@ -270,10 +276,10 @@
 {
 	int c = -1;
 	int row = [listOfStrings selectedRow];
-	if (row >=0 ) {
+	if (row >= 0) {
 		int type = (int) [(stringTable*)[aNotification object] type];
 		struct transLine * line = firstTransLine;
-		while (line && c<row) {
+		while (line && c < row) {
 			switch (type) {
 				case 0:
 					if (line->type == TYPE_NEW) c++; break;

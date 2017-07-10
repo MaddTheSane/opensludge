@@ -26,8 +26,7 @@
 }
 - (void) connectToDoc: (id) myDoc;
 - (void) drawRect: (NSRect) bounds ;
-- (int) spriteIndex;
-- (void) setSpriteIndex: (int)i;
+@property (nonatomic) int spriteIndex;
 @end
 
 

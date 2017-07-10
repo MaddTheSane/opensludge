@@ -10,6 +10,7 @@
 #import "ProjectDocument.h"
 
 @implementation SLUDGE_Document
+@synthesize project;
 
 - (void)windowControllerDidLoadNib:(NSWindowController *) aController
 {
@@ -37,8 +38,8 @@
 					files = [NSArray arrayWithObjects:@"slu", @"sld", nil];
 					[savePanel setAllowedFileTypes:files];
 				
-					if ( [savePanel runModal] ) {
-						path = [ savePanel filename ];
+					if ( [savePanel runModal] == NSFileHandlingPanelOKButton) {
+						path = [[savePanel URL] path];
 					}				
 				}
 			} else if ([[self fileType] compare: @"SLUDGE Translation file"] == NSOrderedSame) {
@@ -49,8 +50,8 @@
 					files = [NSArray arrayWithObjects:@"tra", nil];
 					[savePanel setAllowedFileTypes:files];
 					
-					if ( [savePanel runModal] ) {
-						path = [ savePanel filename ];
+					if ( [savePanel runModal] == NSFileHandlingPanelOKButton ) {
+						path = [[savePanel URL] path];
 					}				
 				}
 			}
@@ -69,8 +70,8 @@
 			}
 		} else {
 			// File exists ... look for it in project!
-			UInt8 buffer[1024];
-			if (CFURLGetFileSystemRepresentation((CFURLRef) [self fileURL], true, buffer, 1023)) {
+			char buffer[1024];
+			if (CFURLGetFileSystemRepresentation((CFURLRef) [self fileURL], true, (UInt8*)buffer, 1023)) {
 				if ([p isFileInProject: buffer]) {
 					project = p;
 				}

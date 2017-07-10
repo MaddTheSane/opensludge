@@ -9,10 +9,9 @@
 #import <Cocoa/Cocoa.h>
 
 @interface SLUDGE_Document : NSDocument {
-	SLUDGE_Document *project;
+	__unsafe_unretained SLUDGE_Document *project;
 }
 
-- (SLUDGE_Document *) project;
-- (void) setProject:(SLUDGE_Document *) p;
+@property (assign) SLUDGE_Document *project;
 
 @end

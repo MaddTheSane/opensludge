@@ -398,6 +398,7 @@ extern bool errorBox (const char * head, const char * msg);
 @end
 
 @implementation SpriteOpenGLView
+@synthesize spriteIndex;
 
 - (void) setCoords {
 	glMatrixMode(GL_PROJECTION);
@@ -443,11 +444,6 @@ extern bool errorBox (const char * head, const char * msg);
 {
 	showBox = i;
 	[self setNeedsDisplay:YES];
-}
-
-- (int) spriteIndex
-{
-	return spriteIndex;
 }
 
 - (void) setSpriteIndex:(int)i

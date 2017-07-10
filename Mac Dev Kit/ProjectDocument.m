@@ -264,10 +264,10 @@ objectValueForTableColumn:(NSTableColumn *)tableColumn
 	[super close];
 }
 
--(bool) compile
+-(BOOL) compile
 {
-	bool val = false;
-	int success = false;
+	BOOL val = false;
+	int success = 0;
 	
 	[self setSettings];
 	
@@ -312,7 +312,7 @@ extern char * gameFile;
 }
 
 
-- (bool)showProjectPrefs
+- (BOOL)showProjectPrefs
 {
 	
 	[NSApp beginSheet:projectPrefs
@@ -320,7 +320,7 @@ extern char * gameFile;
 		modalDelegate:nil
 	   didEndSelector:NULL
 		  contextInfo:NULL];
-	return true;
+	return YES;
 }
 
 - (IBAction)endProjectPrefs:(id)sender{
@@ -421,13 +421,10 @@ extern char * gameFile;
 	[tabView selectTabViewItemAtIndex:1];
 }
 
-- (bool) isFileInProject: (UInt8 *) f {
+- (BOOL) isFileInProject: (char *) f {
 	if (! fileListNum) return false;
 	
-	UInt8 filename[1024];
-	if (! CFURLGetFileSystemRepresentation((CFURLRef) [self fileURL], true, filename, 1023))
-		return false;
-	getSourceDirFromName ((char *) filename);
+	getSourceDirFromName (self.fileURL.fileSystemRepresentation);
 
 	char * x = strstr((char *) f, (char *)sourceDirectory);
 	

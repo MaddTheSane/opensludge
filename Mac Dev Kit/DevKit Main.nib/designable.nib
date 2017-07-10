@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
+        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12121"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +12,7 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <menu title="SDLMain" systemMenu="main" id="29" userLabel="MainMenu">
             <items>
                 <menuItem title="SLUDGE Dev Kit" id="56">
@@ -404,19 +405,18 @@
             </connections>
         </customObject>
         <customObject id="253" userLabel="Font Manager" customClass="NSFontManager"/>
-        <window title="SLUDGE Development Kit Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="357" userLabel="Window1">
+        <window title="SLUDGE Development Kit Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="357">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="79" y="458" width="361" height="107"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
             <value key="minSize" type="size" width="213" height="107"/>
             <view key="contentView" id="358">
                 <rect key="frame" x="0.0" y="0.0" width="361" height="107"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button imageHugsTitle="YES" id="359">
-                        <rect key="frame" x="18" y="71" width="325" height="18"/>
-                        <autoresizingMask key="autoresizingMask"/>
+                    <button imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="359">
+                        <rect key="frame" x="18" y="71" width="178" height="18"/>
                         <buttonCell key="cell" type="check" title="Keep compressed images" bezelStyle="regularSquare" imagePosition="leading" alignment="left" inset="2" id="434">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
@@ -425,9 +425,8 @@
                             <action selector="prefKeepImagesClick:" target="326" id="366"/>
                         </connections>
                     </button>
-                    <button imageHugsTitle="YES" id="360">
-                        <rect key="frame" x="18" y="51" width="325" height="18"/>
-                        <autoresizingMask key="autoresizingMask"/>
+                    <button imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="360">
+                        <rect key="frame" x="18" y="51" width="164" height="18"/>
                         <buttonCell key="cell" type="check" title="Write strings to text file" bezelStyle="regularSquare" imagePosition="leading" alignment="left" inset="2" id="435">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
@@ -436,9 +435,8 @@
                             <action selector="prefWriteStringsClick:" target="326" id="367"/>
                         </connections>
                     </button>
-                    <button imageHugsTitle="YES" id="361">
-                        <rect key="frame" x="18" y="31" width="325" height="18"/>
-                        <autoresizingMask key="autoresizingMask"/>
+                    <button imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="361">
+                        <rect key="frame" x="18" y="31" width="241" height="18"/>
                         <buttonCell key="cell" type="check" title="Verbose errors (development mode)" bezelStyle="regularSquare" imagePosition="leading" alignment="left" inset="2" id="436">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
@@ -448,6 +446,14 @@
                         </connections>
                     </button>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="360" firstAttribute="leading" secondItem="359" secondAttribute="leading" id="AJl-rQ-pcC"/>
+                    <constraint firstItem="359" firstAttribute="top" secondItem="358" secondAttribute="top" constant="20" symbolic="YES" id="B7Z-Kb-xdM"/>
+                    <constraint firstItem="360" firstAttribute="top" secondItem="359" secondAttribute="bottom" constant="6" symbolic="YES" id="TLH-jt-RtP"/>
+                    <constraint firstItem="361" firstAttribute="leading" secondItem="359" secondAttribute="leading" id="Zfu-hK-bSW"/>
+                    <constraint firstItem="361" firstAttribute="top" secondItem="360" secondAttribute="bottom" constant="6" symbolic="YES" id="glw-1l-OVE"/>
+                    <constraint firstItem="359" firstAttribute="leading" secondItem="358" secondAttribute="leading" constant="20" symbolic="YES" id="h9s-n2-lsP"/>
+                </constraints>
             </view>
             <connections>
                 <outlet property="delegate" destination="326" id="365"/>

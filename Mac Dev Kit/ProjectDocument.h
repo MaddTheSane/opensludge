@@ -58,10 +58,10 @@
 - (IBAction)addFileToProject:(id)sender;
 - (IBAction)removeFileFromProject:(id)sender;
 
-- (bool) isFileInProject: (UInt8 *) f;
+- (BOOL) isFileInProject: (char*) f;
 
-- (bool) compile;
-- (bool)showProjectPrefs;
+- (BOOL) compile;
+- (BOOL)showProjectPrefs;
 - (IBAction)endProjectPrefs:(id)sender;
 - (IBAction)runGame:(id)sender;
 - (IBAction)closeCompilerBox:(id)sender;
