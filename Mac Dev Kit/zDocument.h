@@ -49,8 +49,7 @@
 	int buffer;
 	int bufferY;
 }
-- (int) buffer;
-- (void) setBuffer: (int)i;
+@property (nonatomic) int buffer;
 
 - (int) bufferY;
 - (void) setBufferY: (int)i;

@@ -9,6 +9,9 @@
 #import "FloorDocument.h"
 
 #import "FloorMaker.h"
+#include "moreio.h"
+
+extern bool errorBox (const char * head, const char * msg);
 
 @implementation FloorDocument
 
@@ -105,14 +108,15 @@
 	NSOpenPanel *openPanel = [ NSOpenPanel openPanel ];
 	[openPanel setTitle:@"Load file as sprite"];
 	NSArray *files = [NSArray arrayWithObjects:@"tga", @"png", nil];
+	openPanel.allowedFileTypes = files;
 	
-	if ( [ openPanel runModalForDirectory:nil file:nil types:files] ) {
-		path = [ openPanel filename ];
+	if ( [ openPanel runModal] == NSFileHandlingPanelOKButton) {
+		path = [[ openPanel URL ] path];
 		bool success = 0;
 		if ([[path pathExtension] isEqualToString: @"png"]) {
-			success = loadSpriteFromPNG ((char *) [path UTF8String], &backdrop, 0);
+			success = loadSpriteFromPNG ([path fileSystemRepresentation], &backdrop, 0);
 		} else if ([[path pathExtension] isEqualToString: @"tga"]) {
-			success = loadSpriteFromTGA ((char *) [path UTF8String], &backdrop, 0);
+			success = loadSpriteFromTGA ([path fileSystemRepresentation], &backdrop, 0);
 		} else {
 			errorBox ("Can't load image", "I don't recognise the file type. TGA and PNG are the supported file types.");
 		}
@@ -126,7 +130,7 @@
 
 - (IBAction)setFloorColour:(id)sender 
 {
-	[floorView setFloorColour: [[floorColourWell color] colorUsingColorSpaceName:@"NSDeviceRGBColorSpace"]];
+	[floorView setFloorColour: [[floorColourWell color] colorUsingColorSpaceName: NSDeviceRGBColorSpace]];
 }
 
 

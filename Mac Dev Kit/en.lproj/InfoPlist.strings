@@ -1,0 +1,6 @@
+﻿/* Localized versions of Info.plist keys */
+
+CFBundleName = "Sludge Dev Kit";
+CFBundleShortVersionString = "Version 2.2.0";
+CFBundleGetInfoString = "Sludge Dev Kit version 2.2.0, Copyright 2000-2012 Hungry Software and contributors.";
+NSHumanReadableCopyright = "© 2000-2012 Hungry Software and contributors.";

@@ -9,9 +9,10 @@
 #import "ProjectDocument.h"
 #import "ScriptDocument.h"
 #include "Project.hpp"
+#include "compiler.hpp"
 
 #include "moreio.h"
-//#include "helpers.h"
+#include "helpers.h"
 #include "settings.h"
 #include "compilerinfo.h"
 #include "errorlinktofile.h"
@@ -19,6 +20,7 @@
 extern char * sourceDirectory;
 
 extern char * errorTypeStrings[];
+extern bool errorBox (const char * head, const char * msg);
 
 ProjectDocument * me;
 NSModalSession session = nil;
@@ -52,10 +54,7 @@ NSModalSession session = nil;
 	[compilerErrors setDoubleAction:@selector(openError:)];
 	[compilerErrors setTarget:self];
 	
-	UInt8 filename[1024];
-	if (! CFURLGetFileSystemRepresentation((CFURLRef) [self fileURL], true, filename, 1023))
-		return;
-	getSourceDirFromName ((char *) filename);
+	getSourceDirFromName ([[self fileURL] fileSystemRepresentation]);
 	[self getSettings];
 }	
 
@@ -64,14 +63,11 @@ NSModalSession session = nil;
 			  error:(NSError **)outError
 {
 	if ([typeName isEqualToString:@"SLUDGE Project file"]) {	
-		UInt8 buffer[1024];
-		if (CFURLGetFileSystemRepresentation((CFURLRef) absoluteURL, true, buffer, 1023)) {
-			if (loadProject ((char *) buffer, fileList, &fileListNum)) {
-				[projectFiles noteNumberOfRowsChanged];
-				return YES;
-			}
+		if (loadProject ([absoluteURL fileSystemRepresentation], fileList, &fileListNum)) {
+			[projectFiles noteNumberOfRowsChanged];
+			return YES;
 		}
-	} 
+	}
 	*outError = [NSError errorWithDomain:@"Error" code:1 userInfo:nil];
 	return NO;
 }
@@ -82,13 +78,10 @@ NSModalSession session = nil;
 {
 	[self setSettings];
 	if ([typeName isEqualToString:@"SLUDGE Project file"]) {	
-		UInt8 buffer[1024];
-		if (CFURLGetFileSystemRepresentation((CFURLRef) absoluteURL, true, buffer, 1023)) {
-			if (saveProject ((char *) buffer, fileList, &fileListNum)) {
-				return YES;
-			}
+		if (saveProject ([absoluteURL fileSystemRepresentation], fileList, &fileListNum)) {
+			return YES;
 		}
-	} 
+	}
 	*outError = [NSError errorWithDomain:@"Error" code:1 userInfo:nil];
 	return NO;
 }
@@ -100,13 +93,9 @@ NSModalSession session = nil;
 		if ([projectFiles numberOfSelectedRows]) {
 			[removeFileButton setEnabled:YES];
 			clearFileList (resourceList, &numResources);
-			UInt8 filename[1024];
-			if (! CFURLGetFileSystemRepresentation((CFURLRef) [self fileURL], true, filename, 1023))
-				return;
-			getSourceDirFromName ((char *) filename);
+			getSourceDirFromName ([[self fileURL] fileSystemRepresentation]);
 			
-			int i;
-			for (i = 0; i < fileListNum; i ++) {
+			for (NSInteger i = 0; i < fileListNum; i ++) {
 				if (! [projectFiles isRowSelected:i]) continue;
 				
 				populateResourceList (fileList[i], resourceList, &numResources);
@@ -169,7 +158,7 @@ NSModalSession session = nil;
 
 - (void)openItem:(id)sender
 {
-	int row = [resourceFiles clickedRow];
+	NSInteger row = [resourceFiles clickedRow];
 	if (row == -1) 
 		return;
 	
@@ -180,7 +169,7 @@ NSModalSession session = nil;
 }
 
 // This is the project file list!
-- (int)numberOfRowsInTableView:(NSTableView *)tv
+- (NSInteger)numberOfRowsInTableView:(NSTableView *)tv
 {
 	if (tv == compilerErrors)
 		return numErrors;
@@ -191,7 +180,7 @@ NSModalSession session = nil;
 }
 - (id)tableView:(NSTableView *)tv
 objectValueForTableColumn:(NSTableColumn *)tableColumn
-			row:(int)row
+			row:(NSInteger)row
 {
 	NSString *v;
 	if (tv == compilerErrors) {
@@ -215,15 +204,8 @@ objectValueForTableColumn:(NSTableColumn *)tableColumn
 
 - (IBAction)addNamedFileToProject:(NSURL *)fileURL
 {
-	UInt8 path[1024];
-	if (! CFURLGetFileSystemRepresentation((CFURLRef) fileURL, true, path, 1023))
-		return;
-	
-	UInt8 filename[1024];
-	if (! CFURLGetFileSystemRepresentation((CFURLRef) [self fileURL], true, filename, 1023))
-		return;
-	getSourceDirFromName ((char *) filename);
-	addFileToProject ((char *) path, sourceDirectory, fileList, &fileListNum);
+	getSourceDirFromName ([[self fileURL] fileSystemRepresentation]);
+	addFileToProject ([fileURL fileSystemRepresentation], sourceDirectory, fileList, &fileListNum);
 		
 	[projectFiles noteNumberOfRowsChanged];
 	[self updateChangeCount: NSChangeDone];
@@ -235,14 +217,12 @@ objectValueForTableColumn:(NSTableColumn *)tableColumn
 	NSOpenPanel *openPanel = [ NSOpenPanel openPanel ];
 	[openPanel setTitle:@"Add file to SLUDGE Project"];
 	NSArray *files = [NSArray arrayWithObjects:@"slu", @"sld", @"tra", nil];
+	openPanel.allowedFileTypes = files;
 	
-	if ( [ openPanel runModalForDirectory:nil file:nil types:files] ) {
-		path = [ openPanel filename ];
-		UInt8 filename[1024];
-		if (! CFURLGetFileSystemRepresentation((CFURLRef) [self fileURL], true, filename, 1023))
-			return;
-		getSourceDirFromName ((char *) filename);
-		addFileToProject ([path UTF8String], sourceDirectory, fileList, &fileListNum);
+	if ( [ openPanel runModal] == NSFileHandlingPanelOKButton) {
+		path = [[openPanel URL] path];
+		getSourceDirFromName ([[self fileURL] fileSystemRepresentation]);
+		addFileToProject ([path fileSystemRepresentation], sourceDirectory, fileList, &fileListNum);
 		
 		[projectFiles noteNumberOfRowsChanged];
 		[self updateChangeCount: NSChangeDone];
@@ -299,7 +279,7 @@ objectValueForTableColumn:(NSTableColumn *)tableColumn
 	
 	UInt8 buffer[1024];
 	if (CFURLGetFileSystemRepresentation((CFURLRef) [self fileURL], true, buffer, 1023)) {
-		success = compileEverything(buffer, fileList, &fileListNum);
+		success = compileEverything((char*)buffer, fileList, &fileListNum, NULL);
 		val = true;
 	}
 	[closeCompilerButton setEnabled:YES];
@@ -484,7 +464,7 @@ void clearRect (int i, int whichBox) {
 		[me setProgress2max:i?i:1];
 }
 
-void setCompilerText (const where, const char * tx) {
+void setCompilerText (const enum compilerStatusText where, const char * tx) {
 	[me setText:tx here:where];
 }
 

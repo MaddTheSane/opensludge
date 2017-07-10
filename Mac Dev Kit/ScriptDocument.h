@@ -10,7 +10,7 @@
 #import "SLUDGE Document.h"
 
 
-@interface ScriptDocument : SLUDGE_Document {
+@interface ScriptDocument : SLUDGE_Document <NSTextStorageDelegate> {
 	IBOutlet NSTextView *text;
 	
 	

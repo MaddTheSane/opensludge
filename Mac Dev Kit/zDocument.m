@@ -37,10 +37,11 @@
 		NSOpenPanel *openPanel = [ NSOpenPanel openPanel ];
 		[openPanel setTitle:@"Load file to zBuffer"];
 		NSArray *files = [NSArray arrayWithObjects:@"tga", nil];
+		[openPanel setAllowedFileTypes:files];
 		
-		if ( [ openPanel runModalForDirectory:nil file:nil types:files] ) {
-			path = [ openPanel filename ];
-			bool success = loadZBufferFromTGA ((char *) [path UTF8String], &backdrop);
+		if ( [ openPanel runModal] ) {
+			path = [ [openPanel URL] path];
+			bool success = loadZBufferFromTGA ((char *) [path fileSystemRepresentation], &backdrop);
 			if (! success) {
 				[self close];
 				return nil;

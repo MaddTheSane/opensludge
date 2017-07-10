@@ -82,12 +82,9 @@ extern NSModalSession session;
 			 ofType:(NSString *)typeName 
 			  error:(NSError **)outError
 {
-	if ([typeName isEqualToString:@"SLUDGE Sprite Bank"]) {		
-		UInt8 buffer[1024];
-		if (CFURLGetFileSystemRepresentation((CFURLRef) absoluteURL, true, buffer, 1023)) {
-			if (loadSpriteBank ((char *) buffer, &sprites)) {
-				return YES;
-			}
+	if ([typeName isEqualToString:@"SLUDGE Sprite Bank"]) {
+		if (loadSpriteBank (absoluteURL.fileSystemRepresentation, &sprites)) {
+			return YES;
 		}
 	} 
 	*outError = [NSError errorWithDomain:@"Error" code:1 userInfo:nil];
@@ -99,13 +96,10 @@ extern NSModalSession session;
 			 error:(NSError **)outError
 {
 	if ([typeName isEqualToString:@"SLUDGE Sprite Bank"]) {		
-		UInt8 buffer[1024];
-		if (CFURLGetFileSystemRepresentation((CFURLRef) absoluteURL, true, buffer, 1023)) {
-			if (saveSpriteBank ((char *) buffer, &sprites)) {
-				return YES;
-			}
+		if (saveSpriteBank (absoluteURL.fileSystemRepresentation, &sprites)) {
+			return YES;
 		}
-	} 
+	}
 	
 	*outError = [NSError errorWithDomain:@"Error" code:1 userInfo:nil];
 	return NO;
@@ -115,10 +109,9 @@ extern NSModalSession session;
 	return &sprites;
 }
 
-- (int) hotSpotX
-{
-	return hotSpotX;
-}
+@synthesize hotSpotX;
+@synthesize hotSpotY;
+
 - (void) setHotSpotX:(int)i
 {
 	hotSpotX = i;
@@ -128,10 +121,7 @@ extern NSModalSession session;
 		[self updateChangeCount: NSChangeDone];
 	}
 }
-- (int) hotSpotY
-{
-	return hotSpotY;
-}
+
 - (void) setHotSpotY:(int)i
 {
 	hotSpotY = i;
@@ -155,6 +145,8 @@ extern NSModalSession session;
 		[self setHotSpotY: sprites.sprites[[spriteView spriteIndex]].height-1];
 	}
 }
+
+extern bool errorBox (const char * head, const char * msg);
 
 - (IBAction)hotSpotRange:(id)sender
 {
@@ -263,16 +255,17 @@ extern NSModalSession session;
 	NSOpenPanel *openPanel = [ NSOpenPanel openPanel ];
 	[openPanel setTitle:@"Load image as font"];
 	NSArray *files = [NSArray arrayWithObjects:@"tga", @"png", nil];
+	openPanel.allowedFileTypes = files;
 	
-	if ( [ openPanel runModalForDirectory:nil file:nil types:files] ) {
-		path = [ openPanel filename ];
+	if ( [ openPanel runModal] == NSFileHandlingPanelOKButton) {
+		path = [[ openPanel URL ] path];
 		addSprite ([spriteView spriteIndex], &sprites);
 		bool success = 0;
 		
 		if ([[path pathExtension] isEqualToString: @"png"]) {
-			success = loadSpriteFromPNG ((char *) [path UTF8String], &sprites, [spriteView spriteIndex]);
+			success = loadSpriteFromPNG ( [path fileSystemRepresentation], &sprites, [spriteView spriteIndex]);
 		} else if ([[path pathExtension] isEqualToString: @"tga"]) {
-			success = loadSpriteFromTGA ((char *) [path UTF8String], &sprites, [spriteView spriteIndex]);
+			success = loadSpriteFromTGA ( [path fileSystemRepresentation], &sprites, [spriteView spriteIndex]);
 		} else {
 			errorBox ("Can't load image", "I don't recognise the file type. TGA and PNG are the supported file types.");
 		}
@@ -304,13 +297,12 @@ extern NSModalSession session;
 	[openPanel setTitle:@"Load files as sprites"];
 	[openPanel setAllowsMultipleSelection:YES];
 	NSArray *files = [NSArray arrayWithObjects:@"tga", @"png", nil];
+	openPanel.allowedFileTypes = files;
 	
-	if ( [ openPanel runModalForDirectory:nil file:nil types:files] ) {
-		NSArray *filenames = [openPanel URLs];
+	if ( [ openPanel runModal] == NSFileHandlingPanelOKButton) {
+		NSArray<NSURL*> *filenames = [openPanel URLs];
 		
-		NSEnumerator *enumerator = [filenames objectEnumerator];
-		NSURL *filename;
-		while (filename = [enumerator nextObject]) {
+		for (NSURL *filename in filenames) {
 		
 			path = [ filename path];
 			fprintf(stderr, "%s\n", [path UTF8String]);
@@ -349,14 +341,15 @@ extern NSModalSession session;
 	NSOpenPanel *openPanel = [ NSOpenPanel openPanel ];
 	[openPanel setTitle:@"Load file as sprite"];
 	NSArray *files = [NSArray arrayWithObjects:@"tga", @"png", nil];
+	openPanel.allowedFileTypes = files;
 	
-	if ( [ openPanel runModalForDirectory:nil file:nil types:files] ) {
-		path = [ openPanel filename ];
+	if ( [ openPanel runModal ] == NSFileHandlingPanelOKButton) {
+		path = [[ openPanel URL ] path];
 		bool success = 0;
 		if ([[path pathExtension] isEqualToString: @"png"]) {
-			success = loadSpriteFromPNG ((char *) [path UTF8String], &sprites, [spriteView spriteIndex]);
+			success = loadSpriteFromPNG ( [path fileSystemRepresentation], &sprites, [spriteView spriteIndex]);
 		} else if ([[path pathExtension] isEqualToString: @"tga"]) {
-			success = loadSpriteFromTGA ((char *) [path UTF8String], &sprites, [spriteView spriteIndex]);
+			success = loadSpriteFromTGA ( [path fileSystemRepresentation], &sprites, [spriteView spriteIndex]);
 		} else {
 			errorBox ("Can't load image", "I don't recognise the file type. TGA and PNG are the supported file types.");
 		}
@@ -384,11 +377,11 @@ extern NSModalSession session;
 	NSString *path = nil;
 	NSSavePanel *savePanel = [ NSSavePanel savePanel ];
 	[savePanel setTitle:@"Export sprite"];
-	[savePanel setRequiredFileType:@"png"];
+	savePanel.allowedFileTypes = @[@"png"];
 	
-	if ( [ savePanel runModalForDirectory:nil file:nil ] ) {
-		path = [ savePanel filename ];
-		exportToPNG ([path UTF8String], &sprites, [spriteView spriteIndex]);
+	if ( [ savePanel runModal ] == NSFileHandlingPanelOKButton) {
+		path = [[ savePanel URL ] path];
+		exportToPNG ([path fileSystemRepresentation], &sprites, [spriteView spriteIndex]);
 	}
 }
 
@@ -442,11 +435,11 @@ extern NSModalSession session;
 }
 - (BOOL)acceptsFirstResponder { return YES; }
 
-- (bool) showBox
+- (BOOL) showBox
 {
 	return spriteIndex;
 }
-- (void) setShowBox:(bool)i
+- (void) setShowBox:(BOOL)i
 {
 	showBox = i;
 	[self setNeedsDisplay:YES];

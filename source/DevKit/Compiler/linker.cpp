@@ -243,7 +243,7 @@ bool runLinker (FILE * mainFile, FILE * indexFile, int functionNum, stringArray 
 		delete localName;
 	}
 
-	delete localsUsed;
+	delete[] localsUsed;
 	delete classNameDot;
 	delete functionName;
 	delete theOriginalFilename;

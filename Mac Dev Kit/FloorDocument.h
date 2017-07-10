@@ -14,9 +14,11 @@
 #include "FloorMaker.h"
 #include "sprites.h"
 
+@class FloorDocument;
+
 @interface FloorOpenGLView : NSOpenGLView
 {
-	id doc;
+	__unsafe_unretained FloorDocument *doc;
 
 	struct spriteBank *backdrop;
 	int x, y, w, h;
@@ -28,7 +30,7 @@
 	int selection, selx1, sely1, selx2, sely2;
 	
 }
-- (void) connectToDoc: (id) myDoc;
+- (void) connectToDoc: (FloorDocument*) myDoc;
 - (void) drawRect: (NSRect) bounds;
 - (void) setFloorColour: (NSColor *) colour;
 @end

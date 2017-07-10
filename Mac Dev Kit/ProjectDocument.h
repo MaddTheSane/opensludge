@@ -10,7 +10,7 @@
 #import "SLUDGE Document.h"
 
 
-@interface ProjectDocument : SLUDGE_Document {
+@interface ProjectDocument : SLUDGE_Document <NSTableViewDataSource> {
 	// Main window
 	IBOutlet NSWindow *projectWindow;
 	IBOutlet NSTabView *tabView;

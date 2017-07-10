@@ -3,6 +3,7 @@
  *  Helper functions that don't depend on other source files.
  */
 
+#ifdef __cplusplus
 // Making something with a char *
 char * joinStrings (const char * a, const char * b);
 char * joinStrings (const char * a, const char * b, const char * c);
@@ -10,7 +11,6 @@ char * joinStrings (const char * a, const char * b, const char * c, const char *
 
 char * joinQuote (char * a, char * b, char q1, char q2);
 
-#ifdef __cplusplus
 extern "C" {
 #endif
 

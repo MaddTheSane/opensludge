@@ -239,10 +239,8 @@
 	SLUDGE_Document *doc = [[NSDocumentController sharedDocumentController] currentDocument];
 	ProjectDocument *p = (ProjectDocument *)[doc project];
 
-	UInt8 filename[1024];
-	
-	if (p && CFURLGetFileSystemRepresentation((CFURLRef) [p fileURL], true, filename, 1023)) {
-		if (updateFromProject ((char *) filename, &firstTransLine)) {
+	if (p) {
+		if (updateFromProject ([[p fileURL] fileSystemRepresentation], &firstTransLine)) {
 			
 			[listOfStrings noteNumberOfRowsChanged];
 			[self updateChangeCount: NSChangeDone];
@@ -250,14 +248,14 @@
 		}		
 	} else {
 	
-		NSString *path = nil;
 		NSOpenPanel *openPanel = [ NSOpenPanel openPanel ];
 		[openPanel setTitle:@"Select a SLUDGE Project"];
 		NSArray *files = [NSArray arrayWithObjects:@"slp", nil];
+		openPanel.allowedFileTypes = files;
 		
-		if ( [ openPanel runModalForDirectory:nil file:nil types:files] ) {
-			path = [ openPanel filename ];
-			if (updateFromProject ([path UTF8String], &firstTransLine)) {
+		if ( [ openPanel runModal] == NSFileHandlingPanelOKButton) {
+			NSURL *path = [openPanel URL];
+			if (updateFromProject ([path fileSystemRepresentation], &firstTransLine)) {
 				
 				[listOfStrings noteNumberOfRowsChanged];
 				[self updateChangeCount: NSChangeDone];
@@ -273,7 +271,7 @@
 	int c = -1;
 	int row = [listOfStrings selectedRow];
 	if (row >=0 ) {
-		int type = (int) [[aNotification object] type];
+		int type = (int) [(stringTable*)[aNotification object] type];
 		struct transLine * line = firstTransLine;
 		while (line && c<row) {
 			switch (type) {

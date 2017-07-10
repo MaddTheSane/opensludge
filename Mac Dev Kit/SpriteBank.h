@@ -13,9 +13,11 @@
 #import "SLUDGE Document.h"
 #include "sprites.h"
 
+@class SpriteBank;
+
 @interface SpriteOpenGLView : NSOpenGLView
 {
-	id doc;
+	__unsafe_unretained SpriteBank *doc;
 	struct spriteBank *sprites;
 	int spriteIndex;
 	bool showBox;
@@ -54,6 +56,10 @@
 	IBOutlet NSTextField *indexStart;
 	IBOutlet NSTextField *indexEnd;	
 }
+
+@property (nonatomic) int hotSpotX;
+@property (nonatomic) int hotSpotY;
+
 - (struct spriteBank *) getSprites;
 
 - (IBAction)hotSpotCentre:(id)sender;

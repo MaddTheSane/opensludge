@@ -1,7 +1,10 @@
 #import "SpriteBank.h"
-#import <unistd.h>
+#include <unistd.h>
+#include <sys/stat.h>
+#include "project.hpp"
 
 #import "AppController.h"
+#include <Carbon/Carbon.h>
 
 #include "settings.h"
 #import "ProjectDocument.h"
@@ -37,12 +40,12 @@ AppController *aC;
 	NSString *path = nil;
 	NSSavePanel *savePanel = [ NSSavePanel savePanel ];
 	[savePanel setTitle:@"New SLUDGE Project"];
-	[savePanel setRequiredFileType:@"slp"];
+	[savePanel setAllowedFileTypes:@[@"slp"]];
 	
-	if ( [ savePanel runModalForDirectory:nil file:nil ] ) {
-		path = [ savePanel filename ];
+	if ( [ savePanel runModal ] ) {
+		path = [ [savePanel URL] path];
 		int numFiles = 0;
-		doNewProject ([path UTF8String], 0, &numFiles);
+		doNewProject ([path fileSystemRepresentation], 0, &numFiles);
 	}
 	
 	if (path) {	
@@ -173,7 +176,6 @@ OSStatus MyGotoHelpPage (CFStringRef pagePath, CFStringRef anchorName)
     CFBundleRef myApplicationBundle = NULL;
     CFStringRef myBookName = NULL;
     CFURLRef myBundleURL;
-    FSRef myBundleRef;
     OSStatus err = noErr;
 	
     myApplicationBundle = CFBundleGetMainBundle();
@@ -186,11 +188,7 @@ OSStatus MyGotoHelpPage (CFStringRef pagePath, CFStringRef anchorName)
 		err = fnfErr; goto bail;
 	}
 	
-	if (!CFURLGetFSRef(myBundleURL, &myBundleRef)) {
-		err = fnfErr; goto bail;
-	}
-	
-	err = AHRegisterHelpBook(&myBundleRef);
+	err = AHRegisterHelpBookWithURL(myBundleURL);
 	if (err != noErr) {
 		fprintf (stderr, "Error registering help book. %d", err);
 		goto bail;
@@ -208,7 +206,11 @@ OSStatus MyGotoHelpPage (CFStringRef pagePath, CFStringRef anchorName)
 
 	err = AHGotoPage (myBookName, pagePath, anchorName);
 					
-bail: return err;
+bail:
+	if (myBundleURL) {
+		CFRelease(myBundleURL);
+	}
+	return err;
 			
 }
 
@@ -217,7 +219,7 @@ bail: return err;
 	MyGotoHelpPage(NULL, NULL);
 }
 
-- (BOOL)validateMenuItem:(id <NSMenuItem>)menuItem {
+- (BOOL)validateMenuItem:(NSMenuItem*)menuItem {
 	int t = [menuItem tag];
 	SLUDGE_Document *doc = [[NSDocumentController sharedDocumentController] currentDocument];
 	ProjectDocument *p = (ProjectDocument *)[doc project];
@@ -304,14 +306,14 @@ const char * getTempDir () {
 }
 
 bool askAQuestion (const char * head, const char * msg) {
-	if (! NSRunAlertPanel ([NSString stringWithUTF8String: head], [NSString stringWithUTF8String: msg], @"Yes", @"No", NULL) == NSAlertDefaultReturn)
+	if (! NSRunAlertPanel ([NSString stringWithUTF8String: head], @"%@", @"Yes", @"No", NULL, [NSString stringWithUTF8String: msg]) == NSAlertDefaultReturn)
 		return false;
 	return true;
 }
 
 
 bool errorBox (const char * head, const char * msg) {
-	NSRunAlertPanel ([NSString stringWithUTF8String: head], [NSString stringWithUTF8String: msg], NULL, NULL, NULL);
+	NSRunAlertPanel ([NSString stringWithUTF8String: head], @"%@", NULL, NULL, NULL, [NSString stringWithUTF8String: msg]);
 	return false;
 }
 
