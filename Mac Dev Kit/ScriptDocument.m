@@ -8,7 +8,7 @@
 
 
 #import "ScriptDocument.h"
-
+#include "interface.h"
 
 @implementation ScriptDocument
 

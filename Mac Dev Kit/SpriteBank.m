@@ -7,6 +7,7 @@
 //
 
 #import "SpriteBank.h"
+#include "interface.h"
 
 extern NSModalSession session;
 
@@ -146,7 +147,6 @@ extern NSModalSession session;
 	}
 }
 
-extern bool errorBox (const char * head, const char * msg);
 
 - (IBAction)hotSpotRange:(id)sender
 {

@@ -8,14 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2F3AB888100CF97C00CD6A13 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 2F3AB887100CF97C00CD6A13 /* Credits.html */; };
-		2F59E738102E230800008746 /* libpng.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F59E737102E230800008746 /* libpng.framework */; };
-		2F59E748102E246100008746 /* libpng.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F59E737102E230800008746 /* libpng.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		2F6274FC10EA337700BBDEDF /* shaders.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F6274FA10EA337700BBDEDF /* shaders.h */; };
 		2F6274FD10EA337700BBDEDF /* shaders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F6274FB10EA337700BBDEDF /* shaders.cpp */; };
 		2F684E1A0FFEAF6700EED6FE /* gameicon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2F684E190FFEAF6700EED6FE /* gameicon.icns */; };
 		2F695B78100D0BD1008A8DC1 /* SDLMain.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2F6F29820FBEFEB000BC6A67 /* SDLMain.nib */; };
-		2F6E5C320E49FE55007408A4 /* bass.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F6E5C310E49FE55007408A4 /* bass.h */; };
-		2F6F29610FBEFE3C00BC6A67 /* OSXMain.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F6F29600FBEFE3C00BC6A67 /* OSXMain.h */; };
 		2F6F29640FBEFE4800BC6A67 /* OSXMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F29630FBEFE4800BC6A67 /* OSXMain.m */; };
 		2F6F29940FBEFF3D00BC6A67 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F6F29930FBEFF3D00BC6A67 /* main.cpp */; };
 		2F7BFEB70E3384AE003F5DC3 /* backdrop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F7BFEB60E3384AE003F5DC3 /* backdrop.cpp */; };
@@ -50,55 +45,14 @@
 		2F7BFF000E338649003F5DC3 /* zbuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F7BFEFB0E338649003F5DC3 /* zbuffer.cpp */; };
 		2F7BFF030E338649003F5DC3 /* winstuff.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F7BFEFE0E338649003F5DC3 /* winstuff.cpp */; };
 		2F7BFF050E33867F003F5DC3 /* tga.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F7BFF040E33867F003F5DC3 /* tga.cpp */; };
-		2F7BFF0E0E3386AD003F5DC3 /* bg_effects.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF070E3386AD003F5DC3 /* bg_effects.h */; };
-		2F7BFF0F0E3386AD003F5DC3 /* backdrop.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF080E3386AD003F5DC3 /* backdrop.h */; };
-		2F7BFF100E3386AD003F5DC3 /* builtin.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF090E3386AD003F5DC3 /* builtin.h */; };
-		2F7BFF110E3386AD003F5DC3 /* colours.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF0A0E3386AD003F5DC3 /* colours.h */; };
-		2F7BFF120E3386AD003F5DC3 /* allfiles.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF0B0E3386AD003F5DC3 /* allfiles.h */; };
-		2F7BFF130E3386AD003F5DC3 /* cursors.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF0C0E3386AD003F5DC3 /* cursors.h */; };
-		2F7BFF140E3386AD003F5DC3 /* csludge.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF0D0E3386AD003F5DC3 /* csludge.h */; };
-		2F7BFF1B0E3386C4003F5DC3 /* debug.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF160E3386C4003F5DC3 /* debug.h */; };
-		2F7BFF1C0E3386C4003F5DC3 /* floor.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF170E3386C4003F5DC3 /* floor.h */; };
-		2F7BFF1D0E3386C4003F5DC3 /* fileset.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF180E3386C4003F5DC3 /* fileset.h */; };
-		2F7BFF1E0E3386C4003F5DC3 /* errors.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF190E3386C4003F5DC3 /* errors.h */; };
-		2F7BFF210E3386E1003F5DC3 /* freeze.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF1F0E3386E1003F5DC3 /* freeze.h */; };
-		2F7BFF220E3386E1003F5DC3 /* fonttext.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF200E3386E1003F5DC3 /* fonttext.h */; };
-		2F7BFF240E3386FC003F5DC3 /* functionList.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF230E3386FC003F5DC3 /* functionList.h */; };
-		2F7BFF2D0E338718003F5DC3 /* people.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF250E338718003F5DC3 /* people.h */; };
-		2F7BFF2E0E338718003F5DC3 /* objtypes.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF260E338718003F5DC3 /* objtypes.h */; };
-		2F7BFF2F0E338718003F5DC3 /* moreio.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF270E338718003F5DC3 /* moreio.h */; };
-		2F7BFF300E338718003F5DC3 /* line.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF280E338718003F5DC3 /* line.h */; };
-		2F7BFF310E338718003F5DC3 /* loadsave.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF290E338718003F5DC3 /* loadsave.h */; };
-		2F7BFF320E338718003F5DC3 /* language.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF2A0E338718003F5DC3 /* language.h */; };
-		2F7BFF330E338718003F5DC3 /* memwatch.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF2B0E338718003F5DC3 /* memwatch.h */; };
-		2F7BFF340E338718003F5DC3 /* newfatal.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF2C0E338718003F5DC3 /* newfatal.h */; };
-		2F7BFF3B0E338736003F5DC3 /* region.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF350E338736003F5DC3 /* region.h */; };
-		2F7BFF3E0E338736003F5DC3 /* sludger.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF380E338736003F5DC3 /* sludger.h */; };
-		2F7BFF3F0E338736003F5DC3 /* sound.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF390E338736003F5DC3 /* sound.h */; };
-		2F7BFF400E338736003F5DC3 /* savedata.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF3A0E338736003F5DC3 /* savedata.h */; };
-		2F7BFF420E338751003F5DC3 /* specialSettings.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF410E338751003F5DC3 /* specialSettings.h */; };
-		2F7BFF490E33877A003F5DC3 /* sprites.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF430E33877A003F5DC3 /* sprites.h */; };
-		2F7BFF4A0E33877A003F5DC3 /* statusba.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF440E33877A003F5DC3 /* statusba.h */; };
-		2F7BFF4B0E33877A003F5DC3 /* stringy.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF450E33877A003F5DC3 /* stringy.h */; };
-		2F7BFF4C0E33877A003F5DC3 /* talk.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF460E33877A003F5DC3 /* talk.h */; };
-		2F7BFF4D0E33877A003F5DC3 /* sprbanks.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF470E33877A003F5DC3 /* sprbanks.h */; };
-		2F7BFF500E338789003F5DC3 /* tga.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF4F0E338789003F5DC3 /* tga.h */; };
-		2F7BFF550E3387B4003F5DC3 /* variable.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF510E3387B4003F5DC3 /* variable.h */; };
-		2F7BFF560E3387B4003F5DC3 /* transition.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF520E3387B4003F5DC3 /* transition.h */; };
-		2F7BFF570E3387B4003F5DC3 /* thumbnail.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF530E3387B4003F5DC3 /* thumbnail.h */; };
-		2F7BFF580E3387B4003F5DC3 /* timing.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF540E3387B4003F5DC3 /* timing.h */; };
-		2F7BFF5A0E3387CE003F5DC3 /* version.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF590E3387CE003F5DC3 /* version.h */; };
-		2F7BFF600E33880C003F5DC3 /* winstuff.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF5C0E33880C003F5DC3 /* winstuff.h */; };
-		2F7BFF610E33880C003F5DC3 /* zbuffer.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2F7BFF5D0E33880C003F5DC3 /* zbuffer.h */; };
 		2F83725B0E5042FA00CC8352 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F83725A0E5042FA00CC8352 /* OpenGL.framework */; };
 		2F9B3FBC0F557405003B4998 /* Sludge.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2F9B3FBB0F557405003B4998 /* Sludge.icns */; };
-		2FA5507C0FF90CC4006A67ED /* Start.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2FA5507A0FF90CC4006A67ED /* Start.h */; };
 		2FA5507D0FF90CC4006A67ED /* Start.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA5507B0FF90CC4006A67ED /* Start.m */; };
 		2FA550870FF90E90006A67ED /* Startup.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2FA550860FF90E90006A67ED /* Startup.nib */; };
 		2FB1C3BD0FAB4B5700718E0C /* graphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FB1C3BC0FAB4B5700718E0C /* graphics.cpp */; };
-		2FB1C3C40FAB4C7900718E0C /* graphics.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2FB1C3C30FAB4C7900718E0C /* graphics.h */; };
 		2FEFC49C10073ADA004C66F1 /* GLee.c in Sources */ = {isa = PBXBuildFile; fileRef = 2FEFC49A10073ADA004C66F1 /* GLee.c */; };
-		2FEFC49D10073ADA004C66F1 /* GLee.h in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 2FEFC49B10073ADA004C66F1 /* GLee.h */; };
+		5520081E1F15355A00214028 /* libpng.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 5520080D1F15351B00214028 /* libpng.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5520081F1F15357100214028 /* libpng.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5520080D1F15351B00214028 /* libpng.framework */; };
 		55FA0E991F13EF730095D165 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FA0E981F13EF730095D165 /* libiconv.tbd */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		E8022077131AA1490018F754 /* movie.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E8022076131AA1490018F754 /* movie.cpp */; };
@@ -136,6 +90,86 @@
 		E8F5CF19131E4A8800EF8C14 /* yuv.vert in Resources */ = {isa = PBXBuildFile; fileRef = E8F5CF14131E4A1600EF8C14 /* yuv.vert */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		552008081F15351B00214028 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 552007F21F15351A00214028 /* libpng.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CE5EC460CF32484EBCA9BBF3;
+			remoteInfo = png;
+		};
+		5520080A1F15351B00214028 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 552007F21F15351A00214028 /* libpng.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE0E208EE7564CE29100B752;
+			remoteInfo = "png-fix-itxt";
+		};
+		5520080C1F15351B00214028 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 552007F21F15351A00214028 /* libpng.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6C25220BE5B143AB9B6E4EA0;
+			remoteInfo = png_framework;
+		};
+		5520080E1F15351B00214028 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 552007F21F15351A00214028 /* libpng.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C39619B3E7A48439AEBF6F5;
+			remoteInfo = png_static;
+		};
+		552008101F15351B00214028 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 552007F21F15351A00214028 /* libpng.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D70A9E262C3E484A82ED938D;
+			remoteInfo = pngfix;
+		};
+		552008121F15351B00214028 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 552007F21F15351A00214028 /* libpng.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F7111489973A4B60B45ED779;
+			remoteInfo = pngimage;
+		};
+		552008141F15351B00214028 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 552007F21F15351A00214028 /* libpng.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A9778514A2D94FDEAC79324A;
+			remoteInfo = pngstest;
+		};
+		552008161F15351B00214028 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 552007F21F15351A00214028 /* libpng.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 98527F56B89D4BC8B8D5ABAF;
+			remoteInfo = pngtest;
+		};
+		552008181F15351B00214028 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 552007F21F15351A00214028 /* libpng.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ACFF5EEB1A3448918AE9363C;
+			remoteInfo = pngunknown;
+		};
+		5520081A1F15351B00214028 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 552007F21F15351A00214028 /* libpng.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FF1F30E968D2471BAD978548;
+			remoteInfo = pngvalid;
+		};
+		5520081C1F15353C00214028 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 552007F21F15351A00214028 /* libpng.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DB7B162D9EDD435B8CDA5AB4;
+			remoteInfo = png_framework;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		002F39FD09D0883400EBEB88 /* Copy Frameworks into .app bundle */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -143,54 +177,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2F59E748102E246100008746 /* libpng.framework in Copy Frameworks into .app bundle */,
 				E8D5A5E11712C13C006698FE /* SDL.framework in Copy Frameworks into .app bundle */,
-				2F7BFF0E0E3386AD003F5DC3 /* bg_effects.h in Copy Frameworks into .app bundle */,
-				2F7BFF0F0E3386AD003F5DC3 /* backdrop.h in Copy Frameworks into .app bundle */,
-				2F7BFF100E3386AD003F5DC3 /* builtin.h in Copy Frameworks into .app bundle */,
-				2F7BFF110E3386AD003F5DC3 /* colours.h in Copy Frameworks into .app bundle */,
-				2F7BFF120E3386AD003F5DC3 /* allfiles.h in Copy Frameworks into .app bundle */,
-				2F7BFF130E3386AD003F5DC3 /* cursors.h in Copy Frameworks into .app bundle */,
-				2F7BFF140E3386AD003F5DC3 /* csludge.h in Copy Frameworks into .app bundle */,
-				2F7BFF1B0E3386C4003F5DC3 /* debug.h in Copy Frameworks into .app bundle */,
-				2F7BFF1C0E3386C4003F5DC3 /* floor.h in Copy Frameworks into .app bundle */,
-				2F7BFF1D0E3386C4003F5DC3 /* fileset.h in Copy Frameworks into .app bundle */,
-				2F7BFF1E0E3386C4003F5DC3 /* errors.h in Copy Frameworks into .app bundle */,
-				2F7BFF210E3386E1003F5DC3 /* freeze.h in Copy Frameworks into .app bundle */,
-				2F7BFF220E3386E1003F5DC3 /* fonttext.h in Copy Frameworks into .app bundle */,
-				2F7BFF240E3386FC003F5DC3 /* functionList.h in Copy Frameworks into .app bundle */,
-				2F7BFF2D0E338718003F5DC3 /* people.h in Copy Frameworks into .app bundle */,
-				2F7BFF2E0E338718003F5DC3 /* objtypes.h in Copy Frameworks into .app bundle */,
-				2F7BFF2F0E338718003F5DC3 /* moreio.h in Copy Frameworks into .app bundle */,
-				2F7BFF300E338718003F5DC3 /* line.h in Copy Frameworks into .app bundle */,
-				2F7BFF310E338718003F5DC3 /* loadsave.h in Copy Frameworks into .app bundle */,
-				2F7BFF320E338718003F5DC3 /* language.h in Copy Frameworks into .app bundle */,
-				2F7BFF330E338718003F5DC3 /* memwatch.h in Copy Frameworks into .app bundle */,
-				2F7BFF340E338718003F5DC3 /* newfatal.h in Copy Frameworks into .app bundle */,
-				2F7BFF3B0E338736003F5DC3 /* region.h in Copy Frameworks into .app bundle */,
-				2F7BFF3E0E338736003F5DC3 /* sludger.h in Copy Frameworks into .app bundle */,
-				2F7BFF3F0E338736003F5DC3 /* sound.h in Copy Frameworks into .app bundle */,
-				2F7BFF400E338736003F5DC3 /* savedata.h in Copy Frameworks into .app bundle */,
-				2F7BFF420E338751003F5DC3 /* specialSettings.h in Copy Frameworks into .app bundle */,
-				2F7BFF490E33877A003F5DC3 /* sprites.h in Copy Frameworks into .app bundle */,
-				2F7BFF4A0E33877A003F5DC3 /* statusba.h in Copy Frameworks into .app bundle */,
-				2F7BFF4B0E33877A003F5DC3 /* stringy.h in Copy Frameworks into .app bundle */,
-				2F7BFF4C0E33877A003F5DC3 /* talk.h in Copy Frameworks into .app bundle */,
-				2F7BFF4D0E33877A003F5DC3 /* sprbanks.h in Copy Frameworks into .app bundle */,
-				2F7BFF500E338789003F5DC3 /* tga.h in Copy Frameworks into .app bundle */,
-				2F7BFF550E3387B4003F5DC3 /* variable.h in Copy Frameworks into .app bundle */,
-				2F7BFF560E3387B4003F5DC3 /* transition.h in Copy Frameworks into .app bundle */,
-				2F7BFF570E3387B4003F5DC3 /* thumbnail.h in Copy Frameworks into .app bundle */,
-				2F7BFF580E3387B4003F5DC3 /* timing.h in Copy Frameworks into .app bundle */,
-				2F7BFF5A0E3387CE003F5DC3 /* version.h in Copy Frameworks into .app bundle */,
-				2F7BFF600E33880C003F5DC3 /* winstuff.h in Copy Frameworks into .app bundle */,
-				2F7BFF610E33880C003F5DC3 /* zbuffer.h in Copy Frameworks into .app bundle */,
-				2F6E5C320E49FE55007408A4 /* bass.h in Copy Frameworks into .app bundle */,
-				2FB1C3C40FAB4C7900718E0C /* graphics.h in Copy Frameworks into .app bundle */,
-				2F6F29610FBEFE3C00BC6A67 /* OSXMain.h in Copy Frameworks into .app bundle */,
-				2FA5507C0FF90CC4006A67ED /* Start.h in Copy Frameworks into .app bundle */,
-				2FEFC49D10073ADA004C66F1 /* GLee.h in Copy Frameworks into .app bundle */,
-				2F6274FC10EA337700BBDEDF /* shaders.h in Copy Frameworks into .app bundle */,
+				5520081E1F15355A00214028 /* libpng.framework in Copy Frameworks into .app bundle */,
 			);
 			name = "Copy Frameworks into .app bundle";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,7 +199,6 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2F3AB887100CF97C00CD6A13 /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; name = Credits.html; path = ../doc/Credits.html; sourceTree = SOURCE_ROOT; };
-		2F59E737102E230800008746 /* libpng.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libpng.framework; path = "../../libpng-1.2.38/projects/xcode/build/Release/libpng.framework"; sourceTree = SOURCE_ROOT; };
 		2F6274FA10EA337700BBDEDF /* shaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = shaders.h; path = ../source/Engine/shaders.h; sourceTree = SOURCE_ROOT; };
 		2F6274FB10EA337700BBDEDF /* shaders.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = shaders.cpp; path = ../source/Engine/shaders.cpp; sourceTree = SOURCE_ROOT; };
 		2F684E190FFEAF6700EED6FE /* gameicon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = gameicon.icns; path = ../images/gameicon.icns; sourceTree = SOURCE_ROOT; };
@@ -302,6 +289,7 @@
 		2FB1C3C30FAB4C7900718E0C /* graphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = graphics.h; path = ../source/Engine/graphics.h; sourceTree = SOURCE_ROOT; };
 		2FEFC49A10073ADA004C66F1 /* GLee.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = GLee.c; path = ../GLee/GLee.c; sourceTree = SOURCE_ROOT; };
 		2FEFC49B10073ADA004C66F1 /* GLee.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = GLee.h; path = ../GLee/GLee.h; sourceTree = SOURCE_ROOT; };
+		552007F21F15351A00214028 /* libpng.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libpng.xcodeproj; path = "/Users/cwbetts/makestuff/opensludge/Mac Dev Kit/../libpng-1.6.30/libpng.xcodeproj"; sourceTree = "<absolute>"; };
 		55FA0E981F13EF730095D165 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		8D1107320486CEB800E47090 /* SLUDGE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLUDGE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8022075131AA1490018F754 /* movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = movie.h; path = ../source/Engine/movie.h; sourceTree = SOURCE_ROOT; };
@@ -351,8 +339,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				55FA0E991F13EF730095D165 /* libiconv.tbd in Frameworks */,
+				5520081F1F15357100214028 /* libpng.framework in Frameworks */,
 				E8D5A5E01712C007006698FE /* SDL.framework in Frameworks */,
-				2F59E738102E230800008746 /* libpng.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				2F83725B0E5042FA00CC8352 /* OpenGL.framework in Frameworks */,
 				E8D761481128A5A900A5F7D7 /* libdumb.a in Frameworks */,
@@ -380,16 +368,6 @@
 				2F6F29630FBEFE4800BC6A67 /* OSXMain.m */,
 			);
 			name = "OSX Stuff";
-			sourceTree = "<group>";
-		};
-		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E86EDFF6164FC998008CBEEC /* OpenAL.framework */,
-				2F83725A0E5042FA00CC8352 /* OpenGL.framework */,
-				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
-			);
-			name = "Linked Frameworks";
 			sourceTree = "<group>";
 		};
 		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
@@ -457,10 +435,12 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				552007F21F15351A00214028 /* libpng.xcodeproj */,
 				55FA0E981F13EF730095D165 /* libiconv.tbd */,
 				E8D5A5DF1712C007006698FE /* SDL.framework */,
-				2F59E737102E230800008746 /* libpng.framework */,
-				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				E86EDFF6164FC998008CBEEC /* OpenAL.framework */,
+				2F83725A0E5042FA00CC8352 /* OpenGL.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -554,6 +534,23 @@
 			name = "Source Files";
 			sourceTree = "<group>";
 		};
+		552007F31F15351A00214028 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				552008091F15351B00214028 /* libpng16.dylib */,
+				5520080B1F15351B00214028 /* png-fix-itxt */,
+				5520080D1F15351B00214028 /* libpng.framework */,
+				5520080F1F15351B00214028 /* libpng16.a */,
+				552008111F15351B00214028 /* pngfix */,
+				552008131F15351B00214028 /* pngimage */,
+				552008151F15351B00214028 /* pngstest */,
+				552008171F15351B00214028 /* pngtest */,
+				552008191F15351B00214028 /* pngunknown */,
+				5520081B1F15351B00214028 /* pngvalid */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		E8140215131D28AA00CCA8EC /* libwebm */ = {
 			isa = PBXGroup;
 			children = (
@@ -620,6 +617,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5520081D1F15353C00214028 /* PBXTargetDependency */,
 			);
 			name = OpenSLUDGE;
 			productInstallPath = "$(HOME)/Applications";
@@ -648,12 +646,93 @@
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* SdlSludge */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 552007F31F15351A00214028 /* Products */;
+					ProjectRef = 552007F21F15351A00214028 /* libpng.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8D1107260486CEB800E47090 /* OpenSLUDGE */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		552008091F15351B00214028 /* libpng16.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			name = libpng16.dylib;
+			path = libpng16d.16.30.0.dylib;
+			remoteRef = 552008081F15351B00214028 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5520080B1F15351B00214028 /* png-fix-itxt */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "png-fix-itxt";
+			remoteRef = 5520080A1F15351B00214028 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5520080D1F15351B00214028 /* libpng.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = libpng.framework;
+			remoteRef = 5520080C1F15351B00214028 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5520080F1F15351B00214028 /* libpng16.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			name = libpng16.a;
+			path = libpng16d.a;
+			remoteRef = 5520080E1F15351B00214028 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		552008111F15351B00214028 /* pngfix */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = pngfix;
+			remoteRef = 552008101F15351B00214028 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		552008131F15351B00214028 /* pngimage */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = pngimage;
+			remoteRef = 552008121F15351B00214028 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		552008151F15351B00214028 /* pngstest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = pngstest;
+			remoteRef = 552008141F15351B00214028 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		552008171F15351B00214028 /* pngtest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = pngtest;
+			remoteRef = 552008161F15351B00214028 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		552008191F15351B00214028 /* pngunknown */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = pngunknown;
+			remoteRef = 552008181F15351B00214028 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5520081B1F15351B00214028 /* pngvalid */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = pngvalid;
+			remoteRef = 5520081A1F15351B00214028 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8D1107290486CEB800E47090 /* Resources */ = {
@@ -755,6 +834,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5520081D1F15353C00214028 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = png_framework;
+			targetProxy = 5520081C1F15353C00214028 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C01FCF4B08A954540054247B /* Debug */ = {

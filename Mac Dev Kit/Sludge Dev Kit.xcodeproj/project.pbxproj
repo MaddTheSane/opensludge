@@ -105,8 +105,8 @@
 		2FF7AE531012195300F6AF98 /* SpriteBank.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF7AE511012195300F6AF98 /* SpriteBank.m */; };
 		2FF7AE5D10121A0700F6AF98 /* SpriteBank.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2FF7AE5C10121A0700F6AF98 /* SpriteBank.nib */; };
 		55C301151F1304BD0049C4C3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55C301171F1304BD0049C4C3 /* InfoPlist.strings */; };
-		55C301421F131A060049C4C3 /* libpng.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C301331F1319640049C4C3 /* libpng.framework */; };
-		55C301431F131A060049C4C3 /* libpng.framework in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 55C301331F1319640049C4C3 /* libpng.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55C301421F131A060049C4C3 /* png.framework/png in Frameworks */ = {isa = PBXBuildFile; fileRef = 55C301331F1319640049C4C3 /* png.framework/png */; };
+		55C301431F131A060049C4C3 /* png.framework/png in Copy Frameworks into .app bundle */ = {isa = PBXBuildFile; fileRef = 55C301331F1319640049C4C3 /* png.framework/png */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		E80D9E7F12C9E6C800663154 /* SLUDGE Document.m in Sources */ = {isa = PBXBuildFile; fileRef = E80D9E7E12C9E6C800663154 /* SLUDGE Document.m */; };
 		E839AAD412D739B1007DD503 /* helpers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E839AAD212D739B1007DD503 /* helpers.cpp */; };
@@ -219,7 +219,7 @@
 				2F7EA4BF0FFCEBE6005E5C36 /* realproc.h in Copy Frameworks into .app bundle */,
 				2F7EA4CA0FFCEBE6005E5C36 /* tokens.h in Copy Frameworks into .app bundle */,
 				2F7EA4CC0FFCEBE6005E5C36 /* translation.h in Copy Frameworks into .app bundle */,
-				55C301431F131A060049C4C3 /* libpng.framework in Copy Frameworks into .app bundle */,
+				55C301431F131A060049C4C3 /* png.framework/png in Copy Frameworks into .app bundle */,
 				2F7EA4CD0FFCEBE6005E5C36 /* typedef.h in Copy Frameworks into .app bundle */,
 				2F7EA4EF0FFCEBE6005E5C36 /* launch.h in Copy Frameworks into .app bundle */,
 				2F7EA5060FFCEBE6005E5C36 /* savedata.h in Copy Frameworks into .app bundle */,
@@ -350,7 +350,7 @@
 		2FF7AE511012195300F6AF98 /* SpriteBank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpriteBank.m; sourceTree = "<group>"; };
 		2FF7AE5C10121A0700F6AF98 /* SpriteBank.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = SpriteBank.nib; sourceTree = "<group>"; };
 		55C301161F1304BD0049C4C3 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		55C301181F1319630049C4C3 /* libpng.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libpng.xcodeproj; path = "../../libpng-1.6.30/libpng.xcodeproj"; sourceTree = "<group>"; };
+		55C301181F1319630049C4C3 /* libpng.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libpng.xcodeproj; path = "../libpng-1.6.30/libpng.xcodeproj"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Sludge Dev Kit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sludge Dev Kit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E80D9E7D12C9E6C800663154 /* SLUDGE Document.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SLUDGE Document.h"; sourceTree = "<group>"; };
 		E80D9E7E12C9E6C800663154 /* SLUDGE Document.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SLUDGE Document.m"; sourceTree = "<group>"; };
@@ -369,7 +369,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55C301421F131A060049C4C3 /* libpng.framework in Frameworks */,
+				55C301421F131A060049C4C3 /* png.framework/png in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				2FE2CEC40FFD683B000CC795 /* OpenGL.framework in Frameworks */,
 				2F59AFFF100CD9E1004A21BC /* Carbon.framework in Frameworks */,
@@ -512,7 +512,7 @@
 			children = (
 				55C3012F1F1319640049C4C3 /* libpng16.dylib */,
 				55C301311F1319640049C4C3 /* png-fix-itxt */,
-				55C301331F1319640049C4C3 /* libpng.framework */,
+				55C301331F1319640049C4C3 /* png.framework/png */,
 				55C301351F1319640049C4C3 /* libpng16.a */,
 				55C301371F1319640049C4C3 /* pngfix */,
 				55C301391F1319640049C4C3 /* pngimage */,
@@ -653,10 +653,11 @@
 			remoteRef = 55C301301F1319640049C4C3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		55C301331F1319640049C4C3 /* libpng.framework */ = {
+		55C301331F1319640049C4C3 /* png.framework/png */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = libpng.framework;
+			name = png.framework/png;
+			path = png.framework;
 			remoteRef = 55C301321F1319640049C4C3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};

@@ -16,11 +16,11 @@
 #include "settings.h"
 #include "compilerinfo.h"
 #include "errorlinktofile.h"
+#include "interface.h"
 
 extern char * sourceDirectory;
 
 extern char * errorTypeStrings[];
-extern bool errorBox (const char * head, const char * msg);
 
 ProjectDocument * me;
 NSModalSession session = nil;

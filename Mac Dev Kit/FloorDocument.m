@@ -10,8 +10,7 @@
 
 #import "FloorMaker.h"
 #include "moreio.h"
-
-extern bool errorBox (const char * head, const char * msg);
+#include "interface.h"
 
 @implementation FloorDocument
 

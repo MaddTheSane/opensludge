@@ -10,6 +10,7 @@
 #import "ProjectDocument.h"
 #import "ScriptDocument.h"
 #import "SLUDGE Document.h"
+#include "interface.h"
 
 AppController *aC;
 
@@ -288,8 +289,6 @@ void saveIniFile() {
 	programSettings.compilerVerbose = [prefVerbose state];
 	saveIniFile();
 }
-
-bool errorBox (const char * head, const char * msg) ;
 
 - (IBAction)commentMenu:(id)sender
 {
