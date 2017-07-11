@@ -1,0 +1,4507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		01CC8B15A88346449B3BE841 /* symbol-check */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F3FA6BDDAA304D5E8618039E /* Build configuration list for PBXAggregateTarget "symbol-check" */;
+			buildPhases = (
+				1313448DBBC64075867A054F /* CMake Rules */,
+			);
+			dependencies = (
+				30AAE6CB26804D5B960CF6FC /* PBXTargetDependency */,
+			);
+			name = "symbol-check";
+			productName = "symbol-check";
+		};
+		4EF863C39A2146EB9EDB539C /* genvers */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 262B3BCF555849EF9F4F0431 /* Build configuration list for PBXAggregateTarget "genvers" */;
+			buildPhases = (
+				5C0AF373B2C2418B94EDC7C8 /* CMake Rules */,
+			);
+			dependencies = (
+				536729A14FC44634958F2B19 /* PBXTargetDependency */,
+			);
+			name = genvers;
+			productName = genvers;
+		};
+		68222CA8A5914678A4107A08 /* gensym */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 903354B75B5E4DAE8DE83370 /* Build configuration list for PBXAggregateTarget "gensym" */;
+			buildPhases = (
+				43E1858DD5FB4AD288781B4F /* CMake Rules */,
+			);
+			dependencies = (
+				00B51C3963354A108E388716 /* PBXTargetDependency */,
+			);
+			name = gensym;
+			productName = gensym;
+		};
+		68D08EC1CDC94FD1AFF48BDA /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BCD2FA49CE3A4D699D1E8FA9 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				99519E919B6F47968B7E6E5B /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				8E6418F4882E43BA977C5DAD /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		7B4674AAA45A4250A7DF1633 /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5819B014FFAC427690633C23 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				336AFFE6A2504D09A235F339 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		C468D3C798D446A8A8F41BC1 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5289B59188DE4933B6056D0D /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				EF93D4E29477486AAA08D218 /* CMake Rules */,
+			);
+			dependencies = (
+				527AC7F36D5D4AB79E98AFE2 /* PBXTargetDependency */,
+				F5911A572D8E48EBA209DCA4 /* PBXTargetDependency */,
+				B8B6FDB2569D4D9184BE9C00 /* PBXTargetDependency */,
+				9531674A9C3D4E79B7659AE1 /* PBXTargetDependency */,
+				8BB38C885FB747EC86D9ACE3 /* PBXTargetDependency */,
+				F9E2BEB731AC44218358A846 /* PBXTargetDependency */,
+				93A5A299075646269BFC4205 /* PBXTargetDependency */,
+				BFAE94D5A83049E3ACA866D3 /* PBXTargetDependency */,
+				BAEEE1CFE1804B78ACE78DDF /* PBXTargetDependency */,
+				274497921CB34DD1BBD1A0A8 /* PBXTargetDependency */,
+				79B75673E58E4686ACA1CCCC /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		D08BA1F969754702900E25C0 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6841805F05CA4F4EAEB7581E /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				1B303251AE1A47DF97139CAD /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		F3368AD8DFC440BBBF0DEBBA /* genfiles */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = EF09BE5C4AAA46C1925A2BA5 /* Build configuration list for PBXAggregateTarget "genfiles" */;
+			buildPhases = (
+				4D5C958500744565BF9B2634 /* CMake Rules */,
+			);
+			dependencies = (
+				4A3F9ED3EE3C4794970D79DB /* PBXTargetDependency */,
+			);
+			name = genfiles;
+			productName = genfiles;
+		};
+		F548E7B8FD2049C3808EDCC3 /* genprebuilt */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = CE3438423849489B909D16CD /* Build configuration list for PBXAggregateTarget "genprebuilt" */;
+			buildPhases = (
+				92B4F5F030814AF98E70676E /* CMake Rules */,
+			);
+			dependencies = (
+				18A5A3B0E66B45189CF46421 /* PBXTargetDependency */,
+			);
+			name = genprebuilt;
+			productName = genprebuilt;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0771BC2D4995412E80A50B06 /* pngset.c in Sources */ = {isa = PBXBuildFile; fileRef = B1BDC5B1794447BEBCE0521C /* pngset.c */; };
+		096613D79933451FA6C082F5 /* pngpriv.h in Headers */ = {isa = PBXBuildFile; fileRef = 5107DDD0A78040C9AF39E1FD /* pngpriv.h */; };
+		0A90C2C16D3E4D2DB1759A11 /* pngwrite.c in Sources */ = {isa = PBXBuildFile; fileRef = 1ECB861E0AAE4E97B6F0A612 /* pngwrite.c */; };
+		0EC5BE74625947CAAF1803EC /* png.c in Sources */ = {isa = PBXBuildFile; fileRef = 6057FC66AC72448E952863FD /* png.c */; };
+		122B197264C140988CDACCD8 /* pngstruct.h in Headers */ = {isa = PBXBuildFile; fileRef = F93D9EBDD5F34C4BA80A778E /* pngstruct.h */; };
+		1AF1C47F08E940BBB2305063 /* pngwtran.c in Sources */ = {isa = PBXBuildFile; fileRef = 418D5959A6B343D5928DB796 /* pngwtran.c */; };
+		1FC4F8BF7A314173A62DDE96 /* pngread.c in Sources */ = {isa = PBXBuildFile; fileRef = 448FCAF5ED714A87AFC7570D /* pngread.c */; };
+		2017C8BA487944E5BCFFFB32 /* pngtest.c in Sources */ = {isa = PBXBuildFile; fileRef = 03825D13C62840A0BA2857FA /* pngtest.c */; };
+		201F8BF877324DC89CAC292B /* pngwutil.c in Sources */ = {isa = PBXBuildFile; fileRef = C9B87D347F5B44D78F515707 /* pngwutil.c */; };
+		27AF6CDD49344FFA813104E0 /* pngrutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 45327569A7544A0E8B3B8A04 /* pngrutil.c */; };
+		27D894FC7956441094EA329B /* pngwrite.c in Sources */ = {isa = PBXBuildFile; fileRef = 5FD4ECFCAAAD451D9F0B45F2 /* pngwrite.c */; };
+		2AED4E30DDB44BDD984663F4 /* pngtrans.c in Sources */ = {isa = PBXBuildFile; fileRef = 24AAD116BC184D1C92BB4BA8 /* pngtrans.c */; };
+		2E7287C3CB4B45E5B008D428 /* png.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E6C0038E93D44D5B70F569F /* png.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		303DDFA0C1A748FE9ACFEFDC /* pngpread.c in Sources */ = {isa = PBXBuildFile; fileRef = E25BFECB88004926ACF84A2D /* pngpread.c */; };
+		38AFA89B00A447B5AA30B2E4 /* png-fix-itxt.c in Sources */ = {isa = PBXBuildFile; fileRef = 594D08616B7E4E45819B6E71 /* png-fix-itxt.c */; };
+		398CC7A19A584D53A1508482 /* pngrtran.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AB999472EA84807A1A9AB95 /* pngrtran.c */; };
+		3E17142F55CC4271BBF3E99B /* png.c in Sources */ = {isa = PBXBuildFile; fileRef = 940DDE97BB61427D8A0AD422 /* png.c */; };
+		40D1B1696D284967BA76BAC4 /* pngmem.c in Sources */ = {isa = PBXBuildFile; fileRef = 8C70EFD8AD784FC49DA1D35D /* pngmem.c */; };
+		42EDC46EA278437A894F45FC /* pngwtran.c in Sources */ = {isa = PBXBuildFile; fileRef = 0059B21529CE4170ACF207F1 /* pngwtran.c */; };
+		47EC4422D6BD43D7BF954843 /* pngrio.c in Sources */ = {isa = PBXBuildFile; fileRef = 55C06AC4CE30430E842900D9 /* pngrio.c */; };
+		49079E7F454D4C91B78435CA /* pngerror.c in Sources */ = {isa = PBXBuildFile; fileRef = B9B4903426734283B18EBF5C /* pngerror.c */; };
+		4E7D9DC90F75472E8F179B11 /* pngerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 34CE7220F0174FB293065D8F /* pngerror.c */; };
+		51C41BA2CD9B46BD9FBD4C74 /* pngrutil.c in Sources */ = {isa = PBXBuildFile; fileRef = D1B6344F97414800B7EB6940 /* pngrutil.c */; };
+		553985DCCF18477BBB5B7B93 /* pngpread.c in Sources */ = {isa = PBXBuildFile; fileRef = ED858D483BF44EE5AFB4EC9D /* pngpread.c */; };
+		57079551B8C244B787654BAD /* pngconf.h in Headers */ = {isa = PBXBuildFile; fileRef = F7432900117747E5B36353FE /* pngconf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DD271AE88864BE7BA175A20 /* pngpread.c in Sources */ = {isa = PBXBuildFile; fileRef = 9BC370101FC24D7D8C0DA310 /* pngpread.c */; };
+		5E0778364CE94DC6A337B58B /* pngget.c in Sources */ = {isa = PBXBuildFile; fileRef = 4912B6DFCF574C6B9945555F /* pngget.c */; };
+		61BD6BD48DBC4A9186AC4C83 /* pngmem.c in Sources */ = {isa = PBXBuildFile; fileRef = 1B1009366B7B4CFC81B89F58 /* pngmem.c */; };
+		790C4871F45243E89C8B690D /* pngprefix.h in Headers */ = {isa = PBXBuildFile; fileRef = D2D1E13B22A54AE993AE7EA2 /* pngprefix.h */; };
+		83B711B375974D4796D5D40C /* pngwio.c in Sources */ = {isa = PBXBuildFile; fileRef = A81907709C8D414798B6524C /* pngwio.c */; };
+		84872352CB20490B9DD4A8E8 /* pngdebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D40A0E620614BEE99A61728 /* pngdebug.h */; };
+		874613972420431FB275140B /* pngwtran.c in Sources */ = {isa = PBXBuildFile; fileRef = FBF8C0911BB5439B8F8682DD /* pngwtran.c */; };
+		88E58D6A0D5D4D6A8FC14251 /* png.c in Sources */ = {isa = PBXBuildFile; fileRef = 7C033F23B5244052A3FDEFB0 /* png.c */; };
+		8CC592BF2A8549ABBEA25B71 /* pngimage.c in Sources */ = {isa = PBXBuildFile; fileRef = 13AE74A3760348C79FB4ACDB /* pngimage.c */; };
+		9D6B184ECA594E9FAAF3F36B /* pngrio.c in Sources */ = {isa = PBXBuildFile; fileRef = C68402111F614DB7B9D99467 /* pngrio.c */; };
+		A3637316A69745A7A6B98F7D /* pngget.c in Sources */ = {isa = PBXBuildFile; fileRef = 19262CF7F10F4784AB6B09C8 /* pngget.c */; };
+		A3B9EC8C0DB34BBF85D48838 /* pnginfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 57E3181FECC442ABB373B98C /* pnginfo.h */; };
+		A462975B091B423D95CC4AC1 /* pnglibconf.h in Headers */ = {isa = PBXBuildFile; fileRef = B2D887AD53D04991A01B482D /* pnglibconf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A52E42C6AD5B4325838DBED5 /* pngtrans.c in Sources */ = {isa = PBXBuildFile; fileRef = 01D69716A620417DA895810E /* pngtrans.c */; };
+		AB462778F3DC43DA9375A905 /* pngread.c in Sources */ = {isa = PBXBuildFile; fileRef = D69E5A4C17784064B605FD94 /* pngread.c */; };
+		B17C92B715C54DCB82BE2E95 /* pngunknown.c in Sources */ = {isa = PBXBuildFile; fileRef = 800E675FE168413E8749ACD6 /* pngunknown.c */; };
+		B3B8E0BE8DB3412DB2A0C058 /* pngwutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 33BF667BBE4647A2AE606D84 /* pngwutil.c */; };
+		B7E2B5466C8D4F57B083D916 /* pngwutil.c in Sources */ = {isa = PBXBuildFile; fileRef = D534B53661F641EE8CD9A732 /* pngwutil.c */; };
+		BB22E0FDDFC44908A493417C /* pngrtran.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D7FB42552E448BA86F835F2 /* pngrtran.c */; };
+		BB7608FA4315483D8D6711A5 /* pngwrite.c in Sources */ = {isa = PBXBuildFile; fileRef = 1E74AEA6A2264CC292B58A62 /* pngwrite.c */; };
+		C705745A04204354AA19BCAE /* pngstest.c in Sources */ = {isa = PBXBuildFile; fileRef = DFE5EC58E09E48E29349B040 /* pngstest.c */; };
+		CBC52A547BE94E25B6888BCF /* pngget.c in Sources */ = {isa = PBXBuildFile; fileRef = 5B1846A2F82D4857833EA091 /* pngget.c */; };
+		CE2A7FB83A9D4D56BF5101F7 /* pngwio.c in Sources */ = {isa = PBXBuildFile; fileRef = 88394806ED6447D7844AC55C /* pngwio.c */; };
+		D0E606B98DB4403796583F2F /* pngrio.c in Sources */ = {isa = PBXBuildFile; fileRef = 3515D20B2A464CE88CEBB6A9 /* pngrio.c */; };
+		D4E8F9F5434E478FB49E6496 /* pngvalid.c in Sources */ = {isa = PBXBuildFile; fileRef = 65AE4950E387412ABD4EB3B8 /* pngvalid.c */; };
+		D516A99581CF498BBBC16E41 /* pngrtran.c in Sources */ = {isa = PBXBuildFile; fileRef = AE30431DBFFA431A8A5221AD /* pngrtran.c */; };
+		DC2C09C03320469E907155AD /* pngrutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 82AEAFA1AAA44C72A43A6F13 /* pngrutil.c */; };
+		E1F5AFB01B4847E5ABD4A751 /* pngfix.c in Sources */ = {isa = PBXBuildFile; fileRef = C7AB0040BA80497A9C386015 /* pngfix.c */; };
+		E245133462B949F7A5D838FF /* pngerror.c in Sources */ = {isa = PBXBuildFile; fileRef = B87899EFBC874CF8A96EDC5C /* pngerror.c */; };
+		E319162B2F7344D3A4A664EC /* pngread.c in Sources */ = {isa = PBXBuildFile; fileRef = CC39925D6A3E4B00BEE8CBC1 /* pngread.c */; };
+		E3EBDBB783C9400B828D8E9B /* pngset.c in Sources */ = {isa = PBXBuildFile; fileRef = B697AB1FBB084871929F9EE4 /* pngset.c */; };
+		E4166E7C971847D4856A63D8 /* pngmem.c in Sources */ = {isa = PBXBuildFile; fileRef = 3507118C9ACD4B72B6F5F75A /* pngmem.c */; };
+		F0D5E24BD6CB4CBDA97D2376 /* pngtrans.c in Sources */ = {isa = PBXBuildFile; fileRef = CA93F8164FFA4F1DA13A9A91 /* pngtrans.c */; };
+		FC4F8EC19F91430FB25C4C07 /* pngset.c in Sources */ = {isa = PBXBuildFile; fileRef = A005934CF7AA4E1FBF30FA23 /* pngset.c */; };
+		FD66E31EC6984FE9978B3689 /* pngwio.c in Sources */ = {isa = PBXBuildFile; fileRef = 454C9B27E2504A41811FFCA6 /* pngwio.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0446F0C863A74329A94CF6E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051716F8BE704B9786BB0D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D08BA1F969754702900E25C0;
+			remoteInfo = ZERO_CHECK;
+		};
+		079D65BDE37748DE9A975A69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051716F8BE704B9786BB0D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3368AD8DFC440BBBF0DEBBA;
+			remoteInfo = genfiles;
+		};
+		10165FF7326544189A984A61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051716F8BE704B9786BB0D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 791C3E89417F4021BDCF6E01;
+			remoteInfo = png;
+		};
+		171EC46364B841E4A848458A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051716F8BE704B9786BB0D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D08BA1F969754702900E25C0;
+			remoteInfo = ZERO_CHECK;
+		};
+		172CE2896EDC447F8BDCBDE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051716F8BE704B9786BB0D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 791C3E89417F4021BDCF6E01;
+			remoteInfo = png;
+		};
+		183CD797B21B4BDBBBD55454 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051716F8BE704B9786BB0D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D08BA1F969754702900E25C0;
+			remoteInfo = ZERO_CHECK;
+		};
+		19010CCBACCE4C679F3D404A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051716F8BE704B9786BB0D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D08BA1F969754702900E25C0;
+			remoteInfo = ZERO_CHECK;
+		};
+		1F7CD5BE148F4C809054B5C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051716F8BE704B9786BB0D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D08BA1F969754702900E25C0;
+			remoteInfo = ZERO_CHECK;
+		};
+		26B5B7A80FB8491D8BA066E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051716F8BE704B9786BB0D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D08BA1F969754702900E25C0;
+			remoteInfo = ZERO_CHECK;
+		};
+		34821CA2E9E64BD6909C2AB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051716F8BE704B9786BB0D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D08BA1F969754702900E25C0;
+			remoteInfo = ZERO_CHECK;
+		};
+		3CE31B4008314C4FA899DB8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051716F8BE704B9786BB0D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D08BA1F969754702900E25C0;
+			remoteInfo = ZERO_CHECK;
+		};
+		4002435675B54ABD8029AF22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051716F8BE704B9786BB0D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 676E7348A20E49629D56E214;
+			remoteInfo = png_static;
+		};
+		4AE6F73A3E9145178D485F87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051716F8BE704B9786BB0D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D08BA1F969754702900E25C0;
+			remoteInfo = ZERO_CHECK;
+		};
+		4D254C551FFC4B09BE6AFA3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051716F8BE704B9786BB0D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8896584FD1A74726BFBE86EC;
+			remoteInfo = pngvalid;
+		};
+		535F383D7DE54B2F9B033896 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051716F8BE704B9786BB0D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 791C3E89417F4021BDCF6E01;
+			remoteInfo = png;
+		};
+		758B694036324D3AB3D4A04E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051716F8BE704B9786BB0D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26015FF4D2044EB4A888AE65;
+			remoteInfo = pngfix;
+		};
+		845811EBB27340D59ABCD587 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051716F8BE704B9786BB0D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 791C3E89417F4021BDCF6E01;
+			remoteInfo = png;
+		};
+		87455B8A828349DD8FF9D51E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051716F8BE704B9786BB0D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB7B162D9EDD435B8CDA5AB4;
+			remoteInfo = png_framework;
+		};
+		893BEE5171874F5C828CE80B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051716F8BE704B9786BB0D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 764E8BD64AB6455AACC97A8B;
+			remoteInfo = pngstest;
+		};
+		971D690491294A8E855084D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051716F8BE704B9786BB0D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55F865370CBD43EBAED9090B;
+			remoteInfo = pngtest;
+		};
+		A170111CB6B845E68F49FF33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051716F8BE704B9786BB0D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 791C3E89417F4021BDCF6E01;
+			remoteInfo = png;
+		};
+		A2E279B26C4643499A46A6C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051716F8BE704B9786BB0D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D08BA1F969754702900E25C0;
+			remoteInfo = ZERO_CHECK;
+		};
+		A4F734CC1B9A49EC82E7D445 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051716F8BE704B9786BB0D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 791C3E89417F4021BDCF6E01;
+			remoteInfo = png;
+		};
+		AAA239C263E84AE9B2802DD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051716F8BE704B9786BB0D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16DAF2511F524EDE8507B34D;
+			remoteInfo = "png-fix-itxt";
+		};
+		B430FD0396F544AD8386D7DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051716F8BE704B9786BB0D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D08BA1F969754702900E25C0;
+			remoteInfo = ZERO_CHECK;
+		};
+		BC25B82C9B4A4A80A7F8434D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051716F8BE704B9786BB0D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D08BA1F969754702900E25C0;
+			remoteInfo = ZERO_CHECK;
+		};
+		D0E997238222497E8D17DA6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051716F8BE704B9786BB0D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D08BA1F969754702900E25C0;
+			remoteInfo = ZERO_CHECK;
+		};
+		D1A8420B72DA4CC1A4496CC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051716F8BE704B9786BB0D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3368AD8DFC440BBBF0DEBBA;
+			remoteInfo = genfiles;
+		};
+		D3CD5802B1D84F46A2C3B404 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051716F8BE704B9786BB0D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 791C3E89417F4021BDCF6E01;
+			remoteInfo = png;
+		};
+		D68191CA1C4D4DCF828E7231 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051716F8BE704B9786BB0D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C468D3C798D446A8A8F41BC1;
+			remoteInfo = ALL_BUILD;
+		};
+		E2F12AFB6E9040B8A047CF87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051716F8BE704B9786BB0D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3368AD8DFC440BBBF0DEBBA;
+			remoteInfo = genfiles;
+		};
+		E8D253A8C3D84FFA945EEA04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051716F8BE704B9786BB0D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B312CDC5DEC34579957DB1BF;
+			remoteInfo = pngimage;
+		};
+		EE7553C4B22342DC985A5A68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051716F8BE704B9786BB0D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D08BA1F969754702900E25C0;
+			remoteInfo = ZERO_CHECK;
+		};
+		F829A5F6AE8D4EE9ADBECE47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051716F8BE704B9786BB0D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D08BA1F969754702900E25C0;
+			remoteInfo = ZERO_CHECK;
+		};
+		FA51A875AEAB4826ACF0BDA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051716F8BE704B9786BB0D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D08BA1F969754702900E25C0;
+			remoteInfo = ZERO_CHECK;
+		};
+		FCCD99A7C6B8445082C57BE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 051716F8BE704B9786BB0D09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 758C2AB2CA984F8CBBCB2E58;
+			remoteInfo = pngunknown;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0059B21529CE4170ACF207F1 /* pngwtran.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngwtran.c; sourceTree = SOURCE_ROOT; };
+		01D69716A620417DA895810E /* pngtrans.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngtrans.c; sourceTree = SOURCE_ROOT; };
+		03825D13C62840A0BA2857FA /* pngtest.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngtest.c; sourceTree = SOURCE_ROOT; };
+		075CAB568CFE4340947B2E3D /* pnglibconf.out.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; path = pnglibconf.out.rule; sourceTree = SOURCE_ROOT; };
+		0785AD1B598249CF99725E3C /* png.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = png.h; sourceTree = SOURCE_ROOT; };
+		082CDC375BF649C1B355C010 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		0B8AF1CDD0CB4E6680BB2B5B /* pngdebug.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = pngdebug.h; sourceTree = SOURCE_ROOT; };
+		13AE74A3760348C79FB4ACDB /* pngimage.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = pngimage.c; path = contrib/libtests/pngimage.c; sourceTree = SOURCE_ROOT; };
+		14489558EF184C3D90B4BEA1 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		19262CF7F10F4784AB6B09C8 /* pngget.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngget.c; sourceTree = SOURCE_ROOT; };
+		1B1009366B7B4CFC81B89F58 /* pngmem.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngmem.c; sourceTree = SOURCE_ROOT; };
+		1D4DEAC36B4844F6B63BFA80 /* libpng.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = libpng.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E74AEA6A2264CC292B58A62 /* pngwrite.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngwrite.c; sourceTree = SOURCE_ROOT; };
+		1ECB861E0AAE4E97B6F0A612 /* pngwrite.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngwrite.c; sourceTree = SOURCE_ROOT; };
+		209607B1D1374F47948A3A13 /* pnglibconf.c.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; path = pnglibconf.c.rule; sourceTree = SOURCE_ROOT; };
+		24AAD116BC184D1C92BB4BA8 /* pngtrans.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngtrans.c; sourceTree = SOURCE_ROOT; };
+		33BF667BBE4647A2AE606D84 /* pngwutil.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngwutil.c; sourceTree = SOURCE_ROOT; };
+		346604354E77496AB5F41857 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		34CE7220F0174FB293065D8F /* pngerror.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngerror.c; sourceTree = SOURCE_ROOT; };
+		3507118C9ACD4B72B6F5F75A /* pngmem.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngmem.c; sourceTree = SOURCE_ROOT; };
+		3515D20B2A464CE88CEBB6A9 /* pngrio.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngrio.c; sourceTree = SOURCE_ROOT; };
+		3AB999472EA84807A1A9AB95 /* pngrtran.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngrtran.c; sourceTree = SOURCE_ROOT; };
+		3D7C9EC33D4840CF87E8557C /* pnglibconf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = pnglibconf.h; sourceTree = SOURCE_ROOT; };
+		3E0179C571B343C2B8565F48 /* png.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = png.h; sourceTree = SOURCE_ROOT; };
+		418D5959A6B343D5928DB796 /* pngwtran.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngwtran.c; sourceTree = SOURCE_ROOT; };
+		448FCAF5ED714A87AFC7570D /* pngread.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngread.c; sourceTree = SOURCE_ROOT; };
+		45327569A7544A0E8B3B8A04 /* pngrutil.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngrutil.c; sourceTree = SOURCE_ROOT; };
+		454C9B27E2504A41811FFCA6 /* pngwio.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngwio.c; sourceTree = SOURCE_ROOT; };
+		484964A547C941D2A0F2F4B7 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		4912B6DFCF574C6B9945555F /* pngget.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngget.c; sourceTree = SOURCE_ROOT; };
+		4D22593D4BBE4EB79F4D231D /* png-fix-itxt */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "png-fix-itxt"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D40A0E620614BEE99A61728 /* pngdebug.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = pngdebug.h; sourceTree = SOURCE_ROOT; };
+		5107DDD0A78040C9AF39E1FD /* pngpriv.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = pngpriv.h; sourceTree = SOURCE_ROOT; };
+		521DC3B9A622426C9F6CE2C1 /* pngprefix.h.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; path = pngprefix.h.rule; sourceTree = SOURCE_ROOT; };
+		52554FBEC42D447C8723AE20 /* pnginfo.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = pnginfo.h; sourceTree = SOURCE_ROOT; };
+		54CA439C96064DAF98F82CF7 /* pnglibconf.out.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; path = pnglibconf.out.rule; sourceTree = SOURCE_ROOT; };
+		55C06AC4CE30430E842900D9 /* pngrio.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngrio.c; sourceTree = SOURCE_ROOT; };
+		57E3181FECC442ABB373B98C /* pnginfo.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = pnginfo.h; sourceTree = SOURCE_ROOT; };
+		594D08616B7E4E45819B6E71 /* png-fix-itxt.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "png-fix-itxt.c"; path = "contrib/tools/png-fix-itxt.c"; sourceTree = SOURCE_ROOT; };
+		5B1846A2F82D4857833EA091 /* pngget.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngget.c; sourceTree = SOURCE_ROOT; };
+		5C80FF0E3E9D4CD29645806D /* pnginfo.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = pnginfo.h; sourceTree = SOURCE_ROOT; };
+		5E6C0038E93D44D5B70F569F /* png.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = png.h; sourceTree = SOURCE_ROOT; };
+		5F9D6021FADD4C9EBBC3E595 /* pngimage */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = pngimage; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FD4ECFCAAAD451D9F0B45F2 /* pngwrite.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngwrite.c; sourceTree = SOURCE_ROOT; };
+		6057FC66AC72448E952863FD /* png.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = png.c; sourceTree = SOURCE_ROOT; };
+		65AE4950E387412ABD4EB3B8 /* pngvalid.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = pngvalid.c; path = contrib/libtests/pngvalid.c; sourceTree = SOURCE_ROOT; };
+		668429DC36384908B6BC09DA /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		69F3D9FBB93C484287B67872 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		6A3B3EA716564CAFA1C99301 /* pngstruct.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = pngstruct.h; sourceTree = SOURCE_ROOT; };
+		6B4BE91F4B0248E39230914E /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		6CD88A175D634437A721720E /* pngunknown */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = pngunknown; sourceTree = BUILT_PRODUCTS_DIR; };
+		7418B6E7F11041AAA7B2FA8F /* pngconf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = pngconf.h; sourceTree = SOURCE_ROOT; };
+		77B075C6F1E844E3ACD022C1 /* pngvalid */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = pngvalid; sourceTree = BUILT_PRODUCTS_DIR; };
+		77D99A2946874CF68578D354 /* pngstruct.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = pngstruct.h; sourceTree = SOURCE_ROOT; };
+		79B763086ED34F2A940A41C0 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		7C033F23B5244052A3FDEFB0 /* png.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = png.c; sourceTree = SOURCE_ROOT; };
+		7E08AEC34CE34DFCA1146E5E /* pngfix */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = pngfix; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FC081EAA0A049F49E53EE8F /* pnglibconf.out.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; path = pnglibconf.out.rule; sourceTree = SOURCE_ROOT; };
+		800E675FE168413E8749ACD6 /* pngunknown.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = pngunknown.c; path = contrib/libtests/pngunknown.c; sourceTree = SOURCE_ROOT; };
+		82AEAFA1AAA44C72A43A6F13 /* pngrutil.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngrutil.c; sourceTree = SOURCE_ROOT; };
+		85A98D51E814473EABE37E06 /* pngdebug.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = pngdebug.h; sourceTree = SOURCE_ROOT; };
+		88394806ED6447D7844AC55C /* pngwio.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngwio.c; sourceTree = SOURCE_ROOT; };
+		88743B2AFEA0430BA452A704 /* pngstest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = pngstest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C70EFD8AD784FC49DA1D35D /* pngmem.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngmem.c; sourceTree = SOURCE_ROOT; };
+		8D1C05309FA54E12B11B4500 /* pnglibconf.c.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; path = pnglibconf.c.rule; sourceTree = SOURCE_ROOT; };
+		8D3B70F959F44E1BB4CE2136 /* pnglibconf.h.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; path = pnglibconf.h.rule; sourceTree = SOURCE_ROOT; };
+		8D7FB42552E448BA86F835F2 /* pngrtran.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngrtran.c; sourceTree = SOURCE_ROOT; };
+		8E320F72ADA14295A57167F2 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		92C89E0C8CBC4331ABD05AF7 /* pnglibconf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = pnglibconf.h; sourceTree = SOURCE_ROOT; };
+		940DDE97BB61427D8A0AD422 /* png.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = png.c; sourceTree = SOURCE_ROOT; };
+		9BC370101FC24D7D8C0DA310 /* pngpread.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngpread.c; sourceTree = SOURCE_ROOT; };
+		9ECB828B334C4EF7944E4888 /* pnglibconf.h.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; path = pnglibconf.h.rule; sourceTree = SOURCE_ROOT; };
+		A00479D1EC084E4F8E9DAE64 /* pngpriv.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = pngpriv.h; sourceTree = SOURCE_ROOT; };
+		A005934CF7AA4E1FBF30FA23 /* pngset.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngset.c; sourceTree = SOURCE_ROOT; };
+		A81907709C8D414798B6524C /* pngwio.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngwio.c; sourceTree = SOURCE_ROOT; };
+		AA376211A5944577B98A9F9A /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		AA61DE74A2A14D1AB6DA56C6 /* pngprefix.h.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; path = pngprefix.h.rule; sourceTree = SOURCE_ROOT; };
+		AE30431DBFFA431A8A5221AD /* pngrtran.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngrtran.c; sourceTree = SOURCE_ROOT; };
+		B1BDC5B1794447BEBCE0521C /* pngset.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngset.c; sourceTree = SOURCE_ROOT; };
+		B2D887AD53D04991A01B482D /* pnglibconf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = pnglibconf.h; sourceTree = SOURCE_ROOT; };
+		B356F47F711D448BB16579D2 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B697AB1FBB084871929F9EE4 /* pngset.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngset.c; sourceTree = SOURCE_ROOT; };
+		B87899EFBC874CF8A96EDC5C /* pngerror.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngerror.c; sourceTree = SOURCE_ROOT; };
+		B919795A4C764DE597CE7138 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B9B4903426734283B18EBF5C /* pngerror.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngerror.c; sourceTree = SOURCE_ROOT; };
+		BA499E376D7649E6B693BD60 /* pngpriv.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = pngpriv.h; sourceTree = SOURCE_ROOT; };
+		BDD42F236DC04254BA59B2EF /* pngtest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = pngtest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5F7FEA2AA4441F197218D35 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		C68402111F614DB7B9D99467 /* pngrio.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngrio.c; sourceTree = SOURCE_ROOT; };
+		C7AB0040BA80497A9C386015 /* pngfix.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = pngfix.c; path = contrib/tools/pngfix.c; sourceTree = SOURCE_ROOT; };
+		C9B87D347F5B44D78F515707 /* pngwutil.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngwutil.c; sourceTree = SOURCE_ROOT; };
+		CA93F8164FFA4F1DA13A9A91 /* pngtrans.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngtrans.c; sourceTree = SOURCE_ROOT; };
+		CC39925D6A3E4B00BEE8CBC1 /* pngread.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngread.c; sourceTree = SOURCE_ROOT; };
+		D1B6344F97414800B7EB6940 /* pngrutil.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngrutil.c; sourceTree = SOURCE_ROOT; };
+		D2D1E13B22A54AE993AE7EA2 /* pngprefix.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = pngprefix.h; sourceTree = SOURCE_ROOT; };
+		D534B53661F641EE8CD9A732 /* pngwutil.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngwutil.c; sourceTree = SOURCE_ROOT; };
+		D656E31141D245E9BC0C09BF /* pngprefix.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = pngprefix.h; sourceTree = SOURCE_ROOT; };
+		D69E5A4C17784064B605FD94 /* pngread.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngread.c; sourceTree = SOURCE_ROOT; };
+		D741BC6F798645F8B483DCDE /* pnglibconf.h.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; path = pnglibconf.h.rule; sourceTree = SOURCE_ROOT; };
+		D842D8321F31430C84C67EF4 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		DCD67F35B2604B05B596A209 /* libpng16.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; name = libpng16.a; path = libpng16d.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD4CC2F5D79345289A71B08A /* pnglibconf.c.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; path = pnglibconf.c.rule; sourceTree = SOURCE_ROOT; };
+		DE4D096366514C69B4D5CA5D /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		DFE5EC58E09E48E29349B040 /* pngstest.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = pngstest.c; path = contrib/libtests/pngstest.c; sourceTree = SOURCE_ROOT; };
+		E07ED7BC4E3B4E8E9B1F7066 /* pngprefix.h.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; path = pngprefix.h.rule; sourceTree = SOURCE_ROOT; };
+		E25BFECB88004926ACF84A2D /* pngpread.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngpread.c; sourceTree = SOURCE_ROOT; };
+		E4DD6C73706F46E8A055876B /* pngprefix.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = pngprefix.h; sourceTree = SOURCE_ROOT; };
+		EBD3909BE349492283470D64 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		ED858D483BF44EE5AFB4EC9D /* pngpread.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngpread.c; sourceTree = SOURCE_ROOT; };
+		F54DD1864C8348909EFF782A /* pngconf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = pngconf.h; sourceTree = SOURCE_ROOT; };
+		F7432900117747E5B36353FE /* pngconf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = pngconf.h; sourceTree = SOURCE_ROOT; };
+		F7B10B2CA216472AAB377647 /* libpng16.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; name = libpng16.dylib; path = libpng16d.16.30.0.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		F93D9EBDD5F34C4BA80A778E /* pngstruct.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = pngstruct.h; sourceTree = SOURCE_ROOT; };
+		FBF8C0911BB5439B8F8682DD /* pngwtran.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; path = pngwtran.c; sourceTree = SOURCE_ROOT; };
+		FF8FBBFD89EE4E88BF6699F7 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		030A509B487A40AC894113FF /* pngstest */ = {
+			isa = PBXGroup;
+			children = (
+				89BA569E7B7440399714C70A /* Source Files */,
+				D842D8321F31430C84C67EF4 /* CMakeLists.txt */,
+			);
+			name = pngstest;
+			sourceTree = "<group>";
+		};
+		06E22A9E2C7D4190BA96C44C /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				594D08616B7E4E45819B6E71 /* png-fix-itxt.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		0CF2CA4AE97B4A98B8F56D53 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5E6C0038E93D44D5B70F569F /* png.h */,
+				F7432900117747E5B36353FE /* pngconf.h */,
+				B2D887AD53D04991A01B482D /* pnglibconf.h */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1D3E2CB09D3F4D17B9DA5A31 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				6057FC66AC72448E952863FD /* png.c */,
+				34CE7220F0174FB293065D8F /* pngerror.c */,
+				19262CF7F10F4784AB6B09C8 /* pngget.c */,
+				1B1009366B7B4CFC81B89F58 /* pngmem.c */,
+				E25BFECB88004926ACF84A2D /* pngpread.c */,
+				CC39925D6A3E4B00BEE8CBC1 /* pngread.c */,
+				C68402111F614DB7B9D99467 /* pngrio.c */,
+				AE30431DBFFA431A8A5221AD /* pngrtran.c */,
+				82AEAFA1AAA44C72A43A6F13 /* pngrutil.c */,
+				B1BDC5B1794447BEBCE0521C /* pngset.c */,
+				CA93F8164FFA4F1DA13A9A91 /* pngtrans.c */,
+				454C9B27E2504A41811FFCA6 /* pngwio.c */,
+				5FD4ECFCAAAD451D9F0B45F2 /* pngwrite.c */,
+				FBF8C0911BB5439B8F8682DD /* pngwtran.c */,
+				D534B53661F641EE8CD9A732 /* pngwutil.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		21D94959434743358CDB7CBE /* pngvalid */ = {
+			isa = PBXGroup;
+			children = (
+				F0A4BBCD9F1C49709D6E3E9B /* Source Files */,
+				AA376211A5944577B98A9F9A /* CMakeLists.txt */,
+			);
+			name = pngvalid;
+			sourceTree = "<group>";
+		};
+		23AF1863D2824D31B1AB5FF5 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		2634DF0583C14681BF673DC8 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		3A09C4AA5DD44EFB958549FB /* genprebuilt */ = {
+			isa = PBXGroup;
+			children = (
+				23AF1863D2824D31B1AB5FF5 /* CMake Rules */,
+				346604354E77496AB5F41857 /* CMakeLists.txt */,
+			);
+			name = genprebuilt;
+			sourceTree = "<group>";
+		};
+		3C574D46508845D590DE949E /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				0785AD1B598249CF99725E3C /* png.h */,
+				F54DD1864C8348909EFF782A /* pngconf.h */,
+				0B8AF1CDD0CB4E6680BB2B5B /* pngdebug.h */,
+				52554FBEC42D447C8723AE20 /* pnginfo.h */,
+				92C89E0C8CBC4331ABD05AF7 /* pnglibconf.h */,
+				D656E31141D245E9BC0C09BF /* pngprefix.h */,
+				BA499E376D7649E6B693BD60 /* pngpriv.h */,
+				77D99A2946874CF68578D354 /* pngstruct.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		4853D368CCF84880A37728AB /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+				DD4CC2F5D79345289A71B08A /* pnglibconf.c.rule */,
+				9ECB828B334C4EF7944E4888 /* pnglibconf.h.rule */,
+				075CAB568CFE4340947B2E3D /* pnglibconf.out.rule */,
+				E07ED7BC4E3B4E8E9B1F7066 /* pngprefix.h.rule */,
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		52424CA4E67A45E9BF9A6B42 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+				8D1C05309FA54E12B11B4500 /* pnglibconf.c.rule */,
+				8D3B70F959F44E1BB4CE2136 /* pnglibconf.h.rule */,
+				54CA439C96064DAF98F82CF7 /* pnglibconf.out.rule */,
+				AA61DE74A2A14D1AB6DA56C6 /* pngprefix.h.rule */,
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		567B79E2CC584838B52D30DB /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				03825D13C62840A0BA2857FA /* pngtest.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		5849825C8E2F4538BDDF10E5 /* symbol-check */ = {
+			isa = PBXGroup;
+			children = (
+				66EBFAC8C9A74AD88B34EA03 /* CMake Rules */,
+				B356F47F711D448BB16579D2 /* CMakeLists.txt */,
+			);
+			name = "symbol-check";
+			sourceTree = "<group>";
+		};
+		5AE5DD8EF92141678AD2148E /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				800E675FE168413E8749ACD6 /* pngunknown.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		5B6B0F7E601E4D668A9C7D1A /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+				209607B1D1374F47948A3A13 /* pnglibconf.c.rule */,
+				D741BC6F798645F8B483DCDE /* pnglibconf.h.rule */,
+				7FC081EAA0A049F49E53EE8F /* pnglibconf.out.rule */,
+				521DC3B9A622426C9F6CE2C1 /* pngprefix.h.rule */,
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		5F5FFB85D20347CC8DDF20FD /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				2634DF0583C14681BF673DC8 /* CMake Rules */,
+				79B763086ED34F2A940A41C0 /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		62A8849C8ACF4F4AB8720750 /* png_static */ = {
+			isa = PBXGroup;
+			children = (
+				3C574D46508845D590DE949E /* Header Files */,
+				6DB3D0114B9F4DE4BE70C31A /* Source Files */,
+				5B6B0F7E601E4D668A9C7D1A /* CMake Rules */,
+				668429DC36384908B6BC09DA /* CMakeLists.txt */,
+			);
+			name = png_static;
+			sourceTree = "<group>";
+		};
+		66EBFAC8C9A74AD88B34EA03 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		6DB3D0114B9F4DE4BE70C31A /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C033F23B5244052A3FDEFB0 /* png.c */,
+				B9B4903426734283B18EBF5C /* pngerror.c */,
+				5B1846A2F82D4857833EA091 /* pngget.c */,
+				8C70EFD8AD784FC49DA1D35D /* pngmem.c */,
+				9BC370101FC24D7D8C0DA310 /* pngpread.c */,
+				448FCAF5ED714A87AFC7570D /* pngread.c */,
+				55C06AC4CE30430E842900D9 /* pngrio.c */,
+				3AB999472EA84807A1A9AB95 /* pngrtran.c */,
+				D1B6344F97414800B7EB6940 /* pngrutil.c */,
+				A005934CF7AA4E1FBF30FA23 /* pngset.c */,
+				24AAD116BC184D1C92BB4BA8 /* pngtrans.c */,
+				A81907709C8D414798B6524C /* pngwio.c */,
+				1E74AEA6A2264CC292B58A62 /* pngwrite.c */,
+				0059B21529CE4170ACF207F1 /* pngwtran.c */,
+				33BF667BBE4647A2AE606D84 /* pngwutil.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		6F0AB104C91848EE87C7FD1C /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		784A061727F74F28974CD999 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D40A0E620614BEE99A61728 /* pngdebug.h */,
+				57E3181FECC442ABB373B98C /* pnginfo.h */,
+				D2D1E13B22A54AE993AE7EA2 /* pngprefix.h */,
+				5107DDD0A78040C9AF39E1FD /* pngpriv.h */,
+				F93D9EBDD5F34C4BA80A778E /* pngstruct.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		7DFFA0E7ED584EEABF7ECDCE /* png */ = {
+			isa = PBXGroup;
+			children = (
+				E507E539C53840C18CE76FF6 /* Header Files */,
+				1D3E2CB09D3F4D17B9DA5A31 /* Source Files */,
+				52424CA4E67A45E9BF9A6B42 /* CMake Rules */,
+				C5F7FEA2AA4441F197218D35 /* CMakeLists.txt */,
+			);
+			name = png;
+			sourceTree = "<group>";
+		};
+		81E8EE14F3754A6DB40BF11F /* png_framework */ = {
+			isa = PBXGroup;
+			children = (
+				784A061727F74F28974CD999 /* Header Files */,
+				E5D5A76B971349F889D32C7F /* Source Files */,
+				4853D368CCF84880A37728AB /* CMake Rules */,
+				FF8FBBFD89EE4E88BF6699F7 /* CMakeLists.txt */,
+			);
+			name = png_framework;
+			sourceTree = "<group>";
+		};
+		86E4F2E6E7804696B14EB16A /* pngfix */ = {
+			isa = PBXGroup;
+			children = (
+				ED47A54AA9DC48C5AF241777 /* Source Files */,
+				DE4D096366514C69B4D5CA5D /* CMakeLists.txt */,
+			);
+			name = pngfix;
+			sourceTree = "<group>";
+		};
+		88800D1C97D9419B9233FED0 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		89BA569E7B7440399714C70A /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				DFE5EC58E09E48E29349B040 /* pngstest.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		9B98082B0B454603A6BD94A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7B10B2CA216472AAB377647 /* libpng16.dylib */,
+				4D22593D4BBE4EB79F4D231D /* png-fix-itxt */,
+				1D4DEAC36B4844F6B63BFA80 /* libpng.framework */,
+				DCD67F35B2604B05B596A209 /* libpng16.a */,
+				7E08AEC34CE34DFCA1146E5E /* pngfix */,
+				5F9D6021FADD4C9EBBC3E595 /* pngimage */,
+				88743B2AFEA0430BA452A704 /* pngstest */,
+				BDD42F236DC04254BA59B2EF /* pngtest */,
+				6CD88A175D634437A721720E /* pngunknown */,
+				77B075C6F1E844E3ACD022C1 /* pngvalid */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C3C8B370D96473EA7B1135A /* genfiles */ = {
+			isa = PBXGroup;
+			children = (
+				6F0AB104C91848EE87C7FD1C /* CMake Rules */,
+				6B4BE91F4B0248E39230914E /* CMakeLists.txt */,
+			);
+			name = genfiles;
+			sourceTree = "<group>";
+		};
+		9E45CE88BCC642FCA792492C /* genvers */ = {
+			isa = PBXGroup;
+			children = (
+				E07F17E3D12E4B6699F2BE87 /* CMake Rules */,
+				69F3D9FBB93C484287B67872 /* CMakeLists.txt */,
+			);
+			name = genvers;
+			sourceTree = "<group>";
+		};
+		AD945652FAD348D48EA944B4 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				13AE74A3760348C79FB4ACDB /* pngimage.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		B18E6AC93A0446ADA430D6DF /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				86E4F2E6E7804696B14EB16A /* pngfix */,
+				21D94959434743358CDB7CBE /* pngvalid */,
+				030A509B487A40AC894113FF /* pngstest */,
+				B41B7AE8B1E348A69D6DE124 /* pngunknown */,
+				81E8EE14F3754A6DB40BF11F /* png_framework */,
+				62A8849C8ACF4F4AB8720750 /* png_static */,
+				B78151F1DC6441158A25162B /* pngtest */,
+				7DFFA0E7ED584EEABF7ECDCE /* png */,
+				9C3C8B370D96473EA7B1135A /* genfiles */,
+				3A09C4AA5DD44EFB958549FB /* genprebuilt */,
+				C4B2392A4DE74A828BCC8936 /* gensym */,
+				9E45CE88BCC642FCA792492C /* genvers */,
+				E8C33A1DC4FC42D391A0E5D7 /* png-fix-itxt */,
+				D45C699B5C5D43F5BBF931EF /* pngimage */,
+				5849825C8E2F4538BDDF10E5 /* symbol-check */,
+				5F5FFB85D20347CC8DDF20FD /* ALL_BUILD */,
+				DC6ABF8FC3D34EAD81BE2117 /* ZERO_CHECK */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		B41B7AE8B1E348A69D6DE124 /* pngunknown */ = {
+			isa = PBXGroup;
+			children = (
+				5AE5DD8EF92141678AD2148E /* Source Files */,
+				14489558EF184C3D90B4BEA1 /* CMakeLists.txt */,
+			);
+			name = pngunknown;
+			sourceTree = "<group>";
+		};
+		B6FE351275BE402889C07171 = {
+			isa = PBXGroup;
+			children = (
+				B18E6AC93A0446ADA430D6DF /* Sources */,
+				0CF2CA4AE97B4A98B8F56D53 /* Resources */,
+				9B98082B0B454603A6BD94A4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B717A4EE85A5411098D2E65C /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		B78151F1DC6441158A25162B /* pngtest */ = {
+			isa = PBXGroup;
+			children = (
+				567B79E2CC584838B52D30DB /* Source Files */,
+				484964A547C941D2A0F2F4B7 /* CMakeLists.txt */,
+			);
+			name = pngtest;
+			sourceTree = "<group>";
+		};
+		C4B2392A4DE74A828BCC8936 /* gensym */ = {
+			isa = PBXGroup;
+			children = (
+				88800D1C97D9419B9233FED0 /* CMake Rules */,
+				082CDC375BF649C1B355C010 /* CMakeLists.txt */,
+			);
+			name = gensym;
+			sourceTree = "<group>";
+		};
+		D45C699B5C5D43F5BBF931EF /* pngimage */ = {
+			isa = PBXGroup;
+			children = (
+				AD945652FAD348D48EA944B4 /* Source Files */,
+				B919795A4C764DE597CE7138 /* CMakeLists.txt */,
+			);
+			name = pngimage;
+			sourceTree = "<group>";
+		};
+		DC6ABF8FC3D34EAD81BE2117 /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				B717A4EE85A5411098D2E65C /* CMake Rules */,
+				8E320F72ADA14295A57167F2 /* CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		E07F17E3D12E4B6699F2BE87 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		E507E539C53840C18CE76FF6 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E0179C571B343C2B8565F48 /* png.h */,
+				7418B6E7F11041AAA7B2FA8F /* pngconf.h */,
+				85A98D51E814473EABE37E06 /* pngdebug.h */,
+				5C80FF0E3E9D4CD29645806D /* pnginfo.h */,
+				3D7C9EC33D4840CF87E8557C /* pnglibconf.h */,
+				E4DD6C73706F46E8A055876B /* pngprefix.h */,
+				A00479D1EC084E4F8E9DAE64 /* pngpriv.h */,
+				6A3B3EA716564CAFA1C99301 /* pngstruct.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		E5D5A76B971349F889D32C7F /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				940DDE97BB61427D8A0AD422 /* png.c */,
+				B87899EFBC874CF8A96EDC5C /* pngerror.c */,
+				4912B6DFCF574C6B9945555F /* pngget.c */,
+				3507118C9ACD4B72B6F5F75A /* pngmem.c */,
+				ED858D483BF44EE5AFB4EC9D /* pngpread.c */,
+				D69E5A4C17784064B605FD94 /* pngread.c */,
+				3515D20B2A464CE88CEBB6A9 /* pngrio.c */,
+				8D7FB42552E448BA86F835F2 /* pngrtran.c */,
+				45327569A7544A0E8B3B8A04 /* pngrutil.c */,
+				B697AB1FBB084871929F9EE4 /* pngset.c */,
+				01D69716A620417DA895810E /* pngtrans.c */,
+				88394806ED6447D7844AC55C /* pngwio.c */,
+				1ECB861E0AAE4E97B6F0A612 /* pngwrite.c */,
+				418D5959A6B343D5928DB796 /* pngwtran.c */,
+				C9B87D347F5B44D78F515707 /* pngwutil.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		E8C33A1DC4FC42D391A0E5D7 /* png-fix-itxt */ = {
+			isa = PBXGroup;
+			children = (
+				06E22A9E2C7D4190BA96C44C /* Source Files */,
+				EBD3909BE349492283470D64 /* CMakeLists.txt */,
+			);
+			name = "png-fix-itxt";
+			sourceTree = "<group>";
+		};
+		ED47A54AA9DC48C5AF241777 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7AB0040BA80497A9C386015 /* pngfix.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		F0A4BBCD9F1C49709D6E3E9B /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				65AE4950E387412ABD4EB3B8 /* pngvalid.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5C81EF87746A438E87B318EE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E7287C3CB4B45E5B008D428 /* png.h in Headers */,
+				57079551B8C244B787654BAD /* pngconf.h in Headers */,
+				84872352CB20490B9DD4A8E8 /* pngdebug.h in Headers */,
+				A3B9EC8C0DB34BBF85D48838 /* pnginfo.h in Headers */,
+				A462975B091B423D95CC4AC1 /* pnglibconf.h in Headers */,
+				790C4871F45243E89C8B690D /* pngprefix.h in Headers */,
+				096613D79933451FA6C082F5 /* pngpriv.h in Headers */,
+				122B197264C140988CDACCD8 /* pngstruct.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		16DAF2511F524EDE8507B34D /* png-fix-itxt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E8A052314D34ACA8205253B /* Build configuration list for PBXNativeTarget "png-fix-itxt" */;
+			buildPhases = (
+				349021FB0F4F4189B5902B30 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				511F0FDC99BB47AD9B32B09E /* PBXTargetDependency */,
+			);
+			name = "png-fix-itxt";
+			productName = "png-fix-itxt";
+			productReference = 4D22593D4BBE4EB79F4D231D /* png-fix-itxt */;
+			productType = "com.apple.product-type.tool";
+		};
+		26015FF4D2044EB4A888AE65 /* pngfix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D41C75DD0E84E60A2197EF1 /* Build configuration list for PBXNativeTarget "pngfix" */;
+			buildPhases = (
+				4DFE3ECD97764016B036EE94 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				423EC6AA26544A149D123155 /* PBXTargetDependency */,
+				5C275DFB3D7D46A5BE85E53F /* PBXTargetDependency */,
+			);
+			name = pngfix;
+			productName = pngfix;
+			productReference = 7E08AEC34CE34DFCA1146E5E /* pngfix */;
+			productType = "com.apple.product-type.tool";
+		};
+		55F865370CBD43EBAED9090B /* pngtest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 873276A3788A4EEBA9A07E18 /* Build configuration list for PBXNativeTarget "pngtest" */;
+			buildPhases = (
+				00DEE2DA60724AE1870686EA /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89E253F9422E48708DAD0EB3 /* PBXTargetDependency */,
+				042CBFC28C8D45F3B0F8019E /* PBXTargetDependency */,
+			);
+			name = pngtest;
+			productName = pngtest;
+			productReference = BDD42F236DC04254BA59B2EF /* pngtest */;
+			productType = "com.apple.product-type.tool";
+		};
+		676E7348A20E49629D56E214 /* png_static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59AFE3B565CF4093B1B7BD2A /* Build configuration list for PBXNativeTarget "png_static" */;
+			buildPhases = (
+				8EFE1D87A03149B09A31C2F5 /* CMake Rules */,
+				DC5A538D4C7A4BEB9DDDF36C /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B09D4CA6FCDD4F21BE021982 /* PBXTargetDependency */,
+				8A18A701BC0A4B9688B41921 /* PBXTargetDependency */,
+			);
+			name = png_static;
+			productName = png_static;
+			productReference = DCD67F35B2604B05B596A209 /* libpng16.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		758C2AB2CA984F8CBBCB2E58 /* pngunknown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 518F0269B28C417BB7EE8C6A /* Build configuration list for PBXNativeTarget "pngunknown" */;
+			buildPhases = (
+				EBB963A339354FB990538517 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BD1D621716B4134B57BD148 /* PBXTargetDependency */,
+				43CC5E32A0BD4F9488E5C47D /* PBXTargetDependency */,
+			);
+			name = pngunknown;
+			productName = pngunknown;
+			productReference = 6CD88A175D634437A721720E /* pngunknown */;
+			productType = "com.apple.product-type.tool";
+		};
+		764E8BD64AB6455AACC97A8B /* pngstest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8E1D089A877455F9FDDC7FD /* Build configuration list for PBXNativeTarget "pngstest" */;
+			buildPhases = (
+				894B2B1A3DE845A8BBF158A4 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				660849A1D7F144DC945468F1 /* PBXTargetDependency */,
+				BBFA1003C670414F9CCC6101 /* PBXTargetDependency */,
+			);
+			name = pngstest;
+			productName = pngstest;
+			productReference = 88743B2AFEA0430BA452A704 /* pngstest */;
+			productType = "com.apple.product-type.tool";
+		};
+		791C3E89417F4021BDCF6E01 /* png */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83698006932A40368C04EBFD /* Build configuration list for PBXNativeTarget "png" */;
+			buildPhases = (
+				66B0F38AF51C44CD83FE83D0 /* CMake Rules */,
+				FB6D183374C348179849D4C8 /* Sources */,
+				1B75BD9F5C124AB88F9FCB37 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				442183F83DC448DF8FBB7D76 /* PBXTargetDependency */,
+				C855B0C38C444FC891947E7D /* PBXTargetDependency */,
+			);
+			name = png;
+			productName = png;
+			productReference = F7B10B2CA216472AAB377647 /* libpng16.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		8896584FD1A74726BFBE86EC /* pngvalid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA86952E488F48078F40E493 /* Build configuration list for PBXNativeTarget "pngvalid" */;
+			buildPhases = (
+				7CFB5C3DF6674E21896AA65F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8D410E3A8D6418094352030 /* PBXTargetDependency */,
+				A6B41CE491AE4A50AD5DD328 /* PBXTargetDependency */,
+			);
+			name = pngvalid;
+			productName = pngvalid;
+			productReference = 77B075C6F1E844E3ACD022C1 /* pngvalid */;
+			productType = "com.apple.product-type.tool";
+		};
+		B312CDC5DEC34579957DB1BF /* pngimage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44BDC8EB7D0C4350950D5AFB /* Build configuration list for PBXNativeTarget "pngimage" */;
+			buildPhases = (
+				60FC7339AC4947C4A264CB1B /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5A4FE31FEF64DCEA9033947 /* PBXTargetDependency */,
+				65B6A39DE6564EBC97DFF9C6 /* PBXTargetDependency */,
+			);
+			name = pngimage;
+			productName = pngimage;
+			productReference = 5F9D6021FADD4C9EBBC3E595 /* pngimage */;
+			productType = "com.apple.product-type.tool";
+		};
+		DB7B162D9EDD435B8CDA5AB4 /* png_framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41A8B9B4421E4D71A0CEBC13 /* Build configuration list for PBXNativeTarget "png_framework" */;
+			buildPhases = (
+				C3C9A0C1A9A7460AB5B33DBE /* CMake Rules */,
+				5C81EF87746A438E87B318EE /* Headers */,
+				8B3F018B168B4E58B5DB39F3 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39CDFC591DEF4117A89C5216 /* PBXTargetDependency */,
+				07747CEBCBAF45C4962B00CB /* PBXTargetDependency */,
+			);
+			name = png_framework;
+			productName = png_framework;
+			productReference = 1D4DEAC36B4844F6B63BFA80 /* libpng.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		051716F8BE704B9786BB0D09 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0830;
+			};
+			buildConfigurationList = E768C6B716524A98823C7E7A /* Build configuration list for PBXProject "libpng" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B6FE351275BE402889C07171;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C468D3C798D446A8A8F41BC1 /* ALL_BUILD */,
+				7B4674AAA45A4250A7DF1633 /* RUN_TESTS */,
+				D08BA1F969754702900E25C0 /* ZERO_CHECK */,
+				F3368AD8DFC440BBBF0DEBBA /* genfiles */,
+				F548E7B8FD2049C3808EDCC3 /* genprebuilt */,
+				68222CA8A5914678A4107A08 /* gensym */,
+				4EF863C39A2146EB9EDB539C /* genvers */,
+				68D08EC1CDC94FD1AFF48BDA /* install */,
+				791C3E89417F4021BDCF6E01 /* png */,
+				16DAF2511F524EDE8507B34D /* png-fix-itxt */,
+				DB7B162D9EDD435B8CDA5AB4 /* png_framework */,
+				676E7348A20E49629D56E214 /* png_static */,
+				26015FF4D2044EB4A888AE65 /* pngfix */,
+				B312CDC5DEC34579957DB1BF /* pngimage */,
+				764E8BD64AB6455AACC97A8B /* pngstest */,
+				55F865370CBD43EBAED9090B /* pngtest */,
+				758C2AB2CA984F8CBBCB2E58 /* pngunknown */,
+				8896584FD1A74726BFBE86EC /* pngvalid */,
+				01CC8B15A88346449B3BE841 /* symbol-check */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1313448DBBC64075867A054F /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/cwbetts/makestuff/opensludge/libpng-1.6.30 -f /Users/cwbetts/makestuff/opensludge/libpng-1.6.30/CMakeScripts/symbol-check_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		1B303251AE1A47DF97139CAD /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/cwbetts/makestuff/opensludge/libpng-1.6.30 -f /Users/cwbetts/makestuff/opensludge/libpng-1.6.30/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		1B75BD9F5C124AB88F9FCB37 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/cwbetts/makestuff/opensludge/libpng-1.6.30 -f /Users/cwbetts/makestuff/opensludge/libpng-1.6.30/CMakeScripts/png_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		336AFFE6A2504D09A235F339 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/cwbetts/makestuff/opensludge/libpng-1.6.30 -f /Users/cwbetts/makestuff/opensludge/libpng-1.6.30/CMakeScripts/RUN_TESTS_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		43E1858DD5FB4AD288781B4F /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/cwbetts/makestuff/opensludge/libpng-1.6.30 -f /Users/cwbetts/makestuff/opensludge/libpng-1.6.30/CMakeScripts/gensym_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		4D5C958500744565BF9B2634 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/cwbetts/makestuff/opensludge/libpng-1.6.30 -f /Users/cwbetts/makestuff/opensludge/libpng-1.6.30/CMakeScripts/genfiles_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		5C0AF373B2C2418B94EDC7C8 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/cwbetts/makestuff/opensludge/libpng-1.6.30 -f /Users/cwbetts/makestuff/opensludge/libpng-1.6.30/CMakeScripts/genvers_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		66B0F38AF51C44CD83FE83D0 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/cwbetts/makestuff/opensludge/libpng-1.6.30 -f /Users/cwbetts/makestuff/opensludge/libpng-1.6.30/CMakeScripts/png_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		8EFE1D87A03149B09A31C2F5 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/cwbetts/makestuff/opensludge/libpng-1.6.30 -f /Users/cwbetts/makestuff/opensludge/libpng-1.6.30/CMakeScripts/png_static_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		92B4F5F030814AF98E70676E /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/cwbetts/makestuff/opensludge/libpng-1.6.30 -f /Users/cwbetts/makestuff/opensludge/libpng-1.6.30/CMakeScripts/genprebuilt_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		99519E919B6F47968B7E6E5B /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/cwbetts/makestuff/opensludge/libpng-1.6.30 -f /Users/cwbetts/makestuff/opensludge/libpng-1.6.30/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		C3C9A0C1A9A7460AB5B33DBE /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/cwbetts/makestuff/opensludge/libpng-1.6.30 -f /Users/cwbetts/makestuff/opensludge/libpng-1.6.30/CMakeScripts/png_framework_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		EF93D4E29477486AAA08D218 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/cwbetts/makestuff/opensludge/libpng-1.6.30 -f /Users/cwbetts/makestuff/opensludge/libpng-1.6.30/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00DEE2DA60724AE1870686EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2017C8BA487944E5BCFFFB32 /* pngtest.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		349021FB0F4F4189B5902B30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38AFA89B00A447B5AA30B2E4 /* png-fix-itxt.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DFE3ECD97764016B036EE94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1F5AFB01B4847E5ABD4A751 /* pngfix.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60FC7339AC4947C4A264CB1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CC592BF2A8549ABBEA25B71 /* pngimage.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CFB5C3DF6674E21896AA65F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4E8F9F5434E478FB49E6496 /* pngvalid.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		894B2B1A3DE845A8BBF158A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C705745A04204354AA19BCAE /* pngstest.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B3F018B168B4E58B5DB39F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E17142F55CC4271BBF3E99B /* png.c in Sources */,
+				E245133462B949F7A5D838FF /* pngerror.c in Sources */,
+				5E0778364CE94DC6A337B58B /* pngget.c in Sources */,
+				E4166E7C971847D4856A63D8 /* pngmem.c in Sources */,
+				553985DCCF18477BBB5B7B93 /* pngpread.c in Sources */,
+				AB462778F3DC43DA9375A905 /* pngread.c in Sources */,
+				D0E606B98DB4403796583F2F /* pngrio.c in Sources */,
+				BB22E0FDDFC44908A493417C /* pngrtran.c in Sources */,
+				27AF6CDD49344FFA813104E0 /* pngrutil.c in Sources */,
+				E3EBDBB783C9400B828D8E9B /* pngset.c in Sources */,
+				A52E42C6AD5B4325838DBED5 /* pngtrans.c in Sources */,
+				CE2A7FB83A9D4D56BF5101F7 /* pngwio.c in Sources */,
+				0A90C2C16D3E4D2DB1759A11 /* pngwrite.c in Sources */,
+				1AF1C47F08E940BBB2305063 /* pngwtran.c in Sources */,
+				201F8BF877324DC89CAC292B /* pngwutil.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC5A538D4C7A4BEB9DDDF36C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88E58D6A0D5D4D6A8FC14251 /* png.c in Sources */,
+				49079E7F454D4C91B78435CA /* pngerror.c in Sources */,
+				CBC52A547BE94E25B6888BCF /* pngget.c in Sources */,
+				40D1B1696D284967BA76BAC4 /* pngmem.c in Sources */,
+				5DD271AE88864BE7BA175A20 /* pngpread.c in Sources */,
+				1FC4F8BF7A314173A62DDE96 /* pngread.c in Sources */,
+				47EC4422D6BD43D7BF954843 /* pngrio.c in Sources */,
+				398CC7A19A584D53A1508482 /* pngrtran.c in Sources */,
+				51C41BA2CD9B46BD9FBD4C74 /* pngrutil.c in Sources */,
+				FC4F8EC19F91430FB25C4C07 /* pngset.c in Sources */,
+				2AED4E30DDB44BDD984663F4 /* pngtrans.c in Sources */,
+				83B711B375974D4796D5D40C /* pngwio.c in Sources */,
+				BB7608FA4315483D8D6711A5 /* pngwrite.c in Sources */,
+				42EDC46EA278437A894F45FC /* pngwtran.c in Sources */,
+				B3B8E0BE8DB3412DB2A0C058 /* pngwutil.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBB963A339354FB990538517 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B17C92B715C54DCB82BE2E95 /* pngunknown.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB6D183374C348179849D4C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EC5BE74625947CAAF1803EC /* png.c in Sources */,
+				4E7D9DC90F75472E8F179B11 /* pngerror.c in Sources */,
+				A3637316A69745A7A6B98F7D /* pngget.c in Sources */,
+				61BD6BD48DBC4A9186AC4C83 /* pngmem.c in Sources */,
+				303DDFA0C1A748FE9ACFEFDC /* pngpread.c in Sources */,
+				E319162B2F7344D3A4A664EC /* pngread.c in Sources */,
+				9D6B184ECA594E9FAAF3F36B /* pngrio.c in Sources */,
+				D516A99581CF498BBBC16E41 /* pngrtran.c in Sources */,
+				DC2C09C03320469E907155AD /* pngrutil.c in Sources */,
+				0771BC2D4995412E80A50B06 /* pngset.c in Sources */,
+				F0D5E24BD6CB4CBDA97D2376 /* pngtrans.c in Sources */,
+				FD66E31EC6984FE9978B3689 /* pngwio.c in Sources */,
+				27D894FC7956441094EA329B /* pngwrite.c in Sources */,
+				874613972420431FB275140B /* pngwtran.c in Sources */,
+				B7E2B5466C8D4F57B083D916 /* pngwutil.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00B51C3963354A108E388716 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D08BA1F969754702900E25C0 /* ZERO_CHECK */;
+			targetProxy = 4AE6F73A3E9145178D485F87 /* PBXContainerItemProxy */;
+		};
+		042CBFC28C8D45F3B0F8019E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 791C3E89417F4021BDCF6E01 /* png */;
+			targetProxy = 845811EBB27340D59ABCD587 /* PBXContainerItemProxy */;
+		};
+		07747CEBCBAF45C4962B00CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3368AD8DFC440BBBF0DEBBA /* genfiles */;
+			targetProxy = E2F12AFB6E9040B8A047CF87 /* PBXContainerItemProxy */;
+		};
+		18A5A3B0E66B45189CF46421 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D08BA1F969754702900E25C0 /* ZERO_CHECK */;
+			targetProxy = F829A5F6AE8D4EE9ADBECE47 /* PBXContainerItemProxy */;
+		};
+		274497921CB34DD1BBD1A0A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8896584FD1A74726BFBE86EC /* pngvalid */;
+			targetProxy = 4D254C551FFC4B09BE6AFA3B /* PBXContainerItemProxy */;
+		};
+		30AAE6CB26804D5B960CF6FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D08BA1F969754702900E25C0 /* ZERO_CHECK */;
+			targetProxy = B430FD0396F544AD8386D7DA /* PBXContainerItemProxy */;
+		};
+		39CDFC591DEF4117A89C5216 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D08BA1F969754702900E25C0 /* ZERO_CHECK */;
+			targetProxy = 1F7CD5BE148F4C809054B5C5 /* PBXContainerItemProxy */;
+		};
+		3BD1D621716B4134B57BD148 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D08BA1F969754702900E25C0 /* ZERO_CHECK */;
+			targetProxy = A2E279B26C4643499A46A6C9 /* PBXContainerItemProxy */;
+		};
+		423EC6AA26544A149D123155 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D08BA1F969754702900E25C0 /* ZERO_CHECK */;
+			targetProxy = 3CE31B4008314C4FA899DB8E /* PBXContainerItemProxy */;
+		};
+		43CC5E32A0BD4F9488E5C47D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 791C3E89417F4021BDCF6E01 /* png */;
+			targetProxy = 10165FF7326544189A984A61 /* PBXContainerItemProxy */;
+		};
+		442183F83DC448DF8FBB7D76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D08BA1F969754702900E25C0 /* ZERO_CHECK */;
+			targetProxy = EE7553C4B22342DC985A5A68 /* PBXContainerItemProxy */;
+		};
+		4A3F9ED3EE3C4794970D79DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D08BA1F969754702900E25C0 /* ZERO_CHECK */;
+			targetProxy = BC25B82C9B4A4A80A7F8434D /* PBXContainerItemProxy */;
+		};
+		511F0FDC99BB47AD9B32B09E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D08BA1F969754702900E25C0 /* ZERO_CHECK */;
+			targetProxy = 0446F0C863A74329A94CF6E1 /* PBXContainerItemProxy */;
+		};
+		527AC7F36D5D4AB79E98AFE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D08BA1F969754702900E25C0 /* ZERO_CHECK */;
+			targetProxy = 26B5B7A80FB8491D8BA066E2 /* PBXContainerItemProxy */;
+		};
+		536729A14FC44634958F2B19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D08BA1F969754702900E25C0 /* ZERO_CHECK */;
+			targetProxy = 19010CCBACCE4C679F3D404A /* PBXContainerItemProxy */;
+		};
+		5C275DFB3D7D46A5BE85E53F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 791C3E89417F4021BDCF6E01 /* png */;
+			targetProxy = A170111CB6B845E68F49FF33 /* PBXContainerItemProxy */;
+		};
+		65B6A39DE6564EBC97DFF9C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 791C3E89417F4021BDCF6E01 /* png */;
+			targetProxy = 172CE2896EDC447F8BDCBDE7 /* PBXContainerItemProxy */;
+		};
+		660849A1D7F144DC945468F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D08BA1F969754702900E25C0 /* ZERO_CHECK */;
+			targetProxy = 183CD797B21B4BDBBBD55454 /* PBXContainerItemProxy */;
+		};
+		79B75673E58E4686ACA1CCCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26015FF4D2044EB4A888AE65 /* pngfix */;
+			targetProxy = 758B694036324D3AB3D4A04E /* PBXContainerItemProxy */;
+		};
+		89E253F9422E48708DAD0EB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D08BA1F969754702900E25C0 /* ZERO_CHECK */;
+			targetProxy = FA51A875AEAB4826ACF0BDA4 /* PBXContainerItemProxy */;
+		};
+		8A18A701BC0A4B9688B41921 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3368AD8DFC440BBBF0DEBBA /* genfiles */;
+			targetProxy = D1A8420B72DA4CC1A4496CC4 /* PBXContainerItemProxy */;
+		};
+		8BB38C885FB747EC86D9ACE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB7B162D9EDD435B8CDA5AB4 /* png_framework */;
+			targetProxy = 87455B8A828349DD8FF9D51E /* PBXContainerItemProxy */;
+		};
+		8E6418F4882E43BA977C5DAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C468D3C798D446A8A8F41BC1 /* ALL_BUILD */;
+			targetProxy = D68191CA1C4D4DCF828E7231 /* PBXContainerItemProxy */;
+		};
+		93A5A299075646269BFC4205 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 791C3E89417F4021BDCF6E01 /* png */;
+			targetProxy = 535F383D7DE54B2F9B033896 /* PBXContainerItemProxy */;
+		};
+		9531674A9C3D4E79B7659AE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 758C2AB2CA984F8CBBCB2E58 /* pngunknown */;
+			targetProxy = FCCD99A7C6B8445082C57BE1 /* PBXContainerItemProxy */;
+		};
+		A6B41CE491AE4A50AD5DD328 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 791C3E89417F4021BDCF6E01 /* png */;
+			targetProxy = D3CD5802B1D84F46A2C3B404 /* PBXContainerItemProxy */;
+		};
+		B09D4CA6FCDD4F21BE021982 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D08BA1F969754702900E25C0 /* ZERO_CHECK */;
+			targetProxy = 34821CA2E9E64BD6909C2AB0 /* PBXContainerItemProxy */;
+		};
+		B5A4FE31FEF64DCEA9033947 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D08BA1F969754702900E25C0 /* ZERO_CHECK */;
+			targetProxy = D0E997238222497E8D17DA6D /* PBXContainerItemProxy */;
+		};
+		B8B6FDB2569D4D9184BE9C00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16DAF2511F524EDE8507B34D /* png-fix-itxt */;
+			targetProxy = AAA239C263E84AE9B2802DD2 /* PBXContainerItemProxy */;
+		};
+		BAEEE1CFE1804B78ACE78DDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B312CDC5DEC34579957DB1BF /* pngimage */;
+			targetProxy = E8D253A8C3D84FFA945EEA04 /* PBXContainerItemProxy */;
+		};
+		BBFA1003C670414F9CCC6101 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 791C3E89417F4021BDCF6E01 /* png */;
+			targetProxy = A4F734CC1B9A49EC82E7D445 /* PBXContainerItemProxy */;
+		};
+		BFAE94D5A83049E3ACA866D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55F865370CBD43EBAED9090B /* pngtest */;
+			targetProxy = 971D690491294A8E855084D7 /* PBXContainerItemProxy */;
+		};
+		C855B0C38C444FC891947E7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3368AD8DFC440BBBF0DEBBA /* genfiles */;
+			targetProxy = 079D65BDE37748DE9A975A69 /* PBXContainerItemProxy */;
+		};
+		E8D410E3A8D6418094352030 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D08BA1F969754702900E25C0 /* ZERO_CHECK */;
+			targetProxy = 171EC46364B841E4A848458A /* PBXContainerItemProxy */;
+		};
+		F5911A572D8E48EBA209DCA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 764E8BD64AB6455AACC97A8B /* pngstest */;
+			targetProxy = 893BEE5171874F5C828CE80B /* PBXContainerItemProxy */;
+		};
+		F9E2BEB731AC44218358A846 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 676E7348A20E49629D56E214 /* png_static */;
+			targetProxy = 4002435675B54ABD8029AF22 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04A2ACE9D0BD4EC38C7A922E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "   -I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30   ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/usr/lib/libz.dylib,
+					/usr/lib/libm.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "png-fix-itxt";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		064AB6C2991C4DC1A4F8C7AE /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "symbol-check";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		0848F8226348412CBC06C3FD /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		085FD40F20BA4A92A64D3061 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gensym;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		0E04343BF21C4256AC237A23 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/build";
+			};
+			name = MinSizeRel;
+		};
+		13AFF2B44FE145B5BE3251CD /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		16EAA8DA19FE4050A7D491A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/Debug";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "   -I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30   ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/Debug/libpng16d.16.30.0.dylib",
+					/usr/lib/libz.dylib,
+					/usr/lib/libm.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pngunknown;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		1B4F8753ABFA4353B2422857 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gensym;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		1D9E194C15584B2B8F720A68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		221178A4F8B8453690718C5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/Release";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/Release/libpng16.16.30.0.dylib",
+					/usr/lib/libz.dylib,
+					/usr/lib/libm.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pngstest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		2C7E578109644556A1412108 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_VERSION = 1.6.30;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					png_framework_EXPORTS,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INFOPLIST_FILE = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/CMakeFiles/png_framework.dir/Info.plist";
+				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+					"-I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30",
+				);
+				OTHER_LDFLAGS = (
+					/usr/lib/libz.dylib,
+					/usr/lib/libm.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = libpng;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		2EB727ED19D14B679AE867CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/Release";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/Release/libpng16.16.30.0.dylib",
+					/usr/lib/libz.dylib,
+					/usr/lib/libm.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pngunknown;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		31224A40EB6846D4B6D397B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/usr/lib/libz.dylib,
+					/usr/lib/libm.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "png-fix-itxt";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		3279104B90DC455B93D0B07A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/Debug";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "   -I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30   ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/Debug/libpng16d.16.30.0.dylib",
+					/usr/lib/libz.dylib,
+					/usr/lib/libm.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pngfix;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		3298A95C6A6F4168B37C51B4 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = genvers;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		33245C566B0F45B1AEB9D818 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/Release";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/Release/libpng16.16.30.0.dylib",
+					/usr/lib/libz.dylib,
+					/usr/lib/libm.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pngimage;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		3511F0980FFB446E9411C633 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/RelWithDebInfo";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/RelWithDebInfo/libpng16.16.30.0.dylib",
+					/usr/lib/libz.dylib,
+					/usr/lib/libm.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pngfix;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		37775E51D38A4FBDAE4874E9 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = genfiles;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		3B3360FA7492477786822224 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/RelWithDebInfo";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/RelWithDebInfo/libpng16.16.30.0.dylib",
+					/usr/lib/libz.dylib,
+					/usr/lib/libm.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pngtest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		3C183E9DC35C451F8C14E41B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gensym;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		3F09CB98BAF14D1E8FE19A6C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		3F9FE9D682A84EB1B130AB1F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/build";
+			};
+			name = RelWithDebInfo;
+		};
+		40D0D96B119D4714A027EB49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		4F8834BDBFE34B7FB4CCA030 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "symbol-check";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		52678FEC59C74A6883379FD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/Debug";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "   -I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30   ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/Debug/libpng16d.16.30.0.dylib",
+					/usr/lib/libz.dylib,
+					/usr/lib/libm.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pngtest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		56501574C482409CA9BE3EED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		576F2110B47041F786252EC3 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/MinSizeRel";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/MinSizeRel/libpng16.16.30.0.dylib",
+					/usr/lib/libz.dylib,
+					/usr/lib/libm.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pngfix;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		5EA27157F817430B8A433018 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 16.0.0;
+				DYLIB_CURRENT_VERSION = 16.30.0;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					png_EXPORTS,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+					"-I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					"-install_name",
+					"@rpath/libpng16.16.dylib",
+					/usr/lib/libz.dylib,
+					/usr/lib/libm.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = png16.16.30.0;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		6202F675EF91436C829245D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = genprebuilt;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		64EB0DBD539043EDA51DC6CD /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		6666316B88A345CD8EFE2E19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		6746FD7353E8449281C23300 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/RelWithDebInfo";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/RelWithDebInfo/libpng16.16.30.0.dylib",
+					/usr/lib/libz.dylib,
+					/usr/lib/libm.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pngvalid;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		690842FB06024DA0B7385A2A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/MinSizeRel";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/MinSizeRel/libpng16.16.30.0.dylib",
+					/usr/lib/libz.dylib,
+					/usr/lib/libm.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pngunknown;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		6B26CB30D28147A686789D15 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = genprebuilt;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		6FF0FA3A0B234035AADBA84A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = genvers;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		7310504248CD465DB5332840 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/usr/lib/libz.dylib,
+					/usr/lib/libm.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "png-fix-itxt";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		750328C9F0E0433DB70FFE07 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/usr/lib/libz.dylib,
+					/usr/lib/libm.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "png-fix-itxt";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		7AC10061A5744A32ADDD4D58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_VERSION = 1.6.30;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					png_framework_EXPORTS,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INFOPLIST_FILE = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/CMakeFiles/png_framework.dir/Info.plist";
+				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CFLAGS = (
+					"-fPIC",
+					"-I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30",
+				);
+				OTHER_LDFLAGS = (
+					/usr/lib/libz.dylib,
+					/usr/lib/libm.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = libpng;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		83C9B3D6022C4AFE9A6F170F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		83EB369D53A8470495F11763 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/Debug";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "   -I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30   ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/Debug/libpng16d.16.30.0.dylib",
+					/usr/lib/libz.dylib,
+					/usr/lib/libm.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pngstest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		8A99D67495764A9C9C6D362D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/MinSizeRel";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/MinSizeRel/libpng16.16.30.0.dylib",
+					/usr/lib/libz.dylib,
+					/usr/lib/libm.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pngtest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		8C57A0F12F444B5593ECF625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/build";
+			};
+			name = Release;
+		};
+		8F0E4593926D4053811CF8D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 16.0.0;
+				DYLIB_CURRENT_VERSION = 16.30.0;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					png_EXPORTS,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CFLAGS = (
+					"-fPIC",
+					"-I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					"-install_name",
+					"@rpath/libpng16d.16.dylib",
+					/usr/lib/libz.dylib,
+					/usr/lib/libm.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = png16d.16.30.0;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		91A7B26C1DCD485B83AEDFC7 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		92B97B7E124B43C087A9FC23 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/RelWithDebInfo";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/RelWithDebInfo/libpng16.16.30.0.dylib",
+					/usr/lib/libz.dylib,
+					/usr/lib/libm.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pngstest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		95D02F05C982484FBB2DFD1F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/RelWithDebInfo";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/RelWithDebInfo/libpng16.16.30.0.dylib",
+					/usr/lib/libz.dylib,
+					/usr/lib/libm.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pngimage;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		975C606532FE4AECA741653E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = genvers;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		9BB2F90AA9C74ADFAD12B4E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/Debug";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "   -I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30   ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/Debug/libpng16d.16.30.0.dylib",
+					/usr/lib/libz.dylib,
+					/usr/lib/libm.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pngvalid;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		A07EF0755AE8429BA76A2C0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_VERSION = 1.6.30;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					png_framework_EXPORTS,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INFOPLIST_FILE = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/CMakeFiles/png_framework.dir/Info.plist";
+				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+					"-I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30",
+				);
+				OTHER_LDFLAGS = (
+					/usr/lib/libz.dylib,
+					/usr/lib/libm.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = libpng;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		A98805A76AE447B0A2C4102C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		AB0EE774B6D84BC0BAA5EEB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/build";
+			};
+			name = Debug;
+		};
+		AF4DB49488644AD5A3D62C5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = genprebuilt;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		B180AB77C5D14C81BC038328 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/Release";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/Release/libpng16.16.30.0.dylib",
+					/usr/lib/libz.dylib,
+					/usr/lib/libm.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pngtest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		B2485FE8AF9F44E097730E98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 16.0.0;
+				DYLIB_CURRENT_VERSION = 16.30.0;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					png_EXPORTS,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+					"-I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					"-install_name",
+					"@rpath/libpng16.16.dylib",
+					/usr/lib/libz.dylib,
+					/usr/lib/libm.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = png16.16.30.0;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		B3432F0E273146D0A1A0DDAE /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		B650D432C37A4C418DDD752A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "   -I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30   ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = png16d;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		B6AEEE286A3D4AD392C187BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/Debug";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "   -I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30   ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/Debug/libpng16d.16.30.0.dylib",
+					/usr/lib/libz.dylib,
+					/usr/lib/libm.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pngimage;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		B993F2898A3C4D9A832422E4 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = png16;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		BF126569E498431F955C2FAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/Release";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/Release/libpng16.16.30.0.dylib",
+					/usr/lib/libz.dylib,
+					/usr/lib/libm.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pngvalid;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		C02EA798B85348CD9E3A4A40 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/MinSizeRel";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/MinSizeRel/libpng16.16.30.0.dylib",
+					/usr/lib/libz.dylib,
+					/usr/lib/libm.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pngimage;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		C2690ADC3F8349B4B7A3668B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/RelWithDebInfo";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/RelWithDebInfo/libpng16.16.30.0.dylib",
+					/usr/lib/libz.dylib,
+					/usr/lib/libm.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pngunknown;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		C7ABAAECB51E4B93A0CF2423 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 16.0.0;
+				DYLIB_CURRENT_VERSION = 16.30.0;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					png_EXPORTS,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+					"-I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					"-install_name",
+					"@rpath/libpng16.16.dylib",
+					/usr/lib/libz.dylib,
+					/usr/lib/libm.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = png16.16.30.0;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		C7EC925D5EAA48D4AFACC1D1 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = png16;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		CB3F1FED06524DA4A922EEE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = genfiles;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		CB66CD9AFDBC47C3B2342547 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/Release";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/Release/libpng16.16.30.0.dylib",
+					/usr/lib/libz.dylib,
+					/usr/lib/libm.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pngfix;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		CCC4EAF981CB4B9A895A1DCA /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		CD96DF35587949FC86FD0D2F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = genprebuilt;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		D15F7853083047EC80C1CD48 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = genfiles;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		D632AAA72BD049359900D615 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = png16;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		D968C0389FAE45EEA0032F54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		DAFCE3B22A2940F19F066497 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = genvers;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		E11C745C24914AC78FBDF9A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		E519181F3E62476C999A5B0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "symbol-check";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		E607D61463C94E1B8FE267A5 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/MinSizeRel";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/MinSizeRel/libpng16.16.30.0.dylib",
+					/usr/lib/libz.dylib,
+					/usr/lib/libm.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pngvalid;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		EDB67298ECD74858B8A738EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = genfiles;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		F39FDB19F5A446EB98F96174 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		F3F5F435574648BD8A9F4FF5 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/MinSizeRel";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/MinSizeRel/libpng16.16.30.0.dylib",
+					/usr/lib/libz.dylib,
+					/usr/lib/libm.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pngstest;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		F4AA8BE4F13749E1A632BF06 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_VERSION = 1.6.30;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					png_framework_EXPORTS,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INFOPLIST_FILE = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30/CMakeFiles/png_framework.dir/Info.plist";
+				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+					"-I/Users/cwbetts/makestuff/opensludge/libpng-1.6.30",
+				);
+				OTHER_LDFLAGS = (
+					/usr/lib/libz.dylib,
+					/usr/lib/libm.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = libpng;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		FE24B9CE0E564D87A224ACE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gensym;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		FF5C1F0B8CFB4B09A11646B5 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "symbol-check";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/cwbetts/makestuff/opensludge/libpng-1.6.30";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E8A052314D34ACA8205253B /* Build configuration list for PBXNativeTarget "png-fix-itxt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31224A40EB6846D4B6D397B2 /* Release */,
+				04A2ACE9D0BD4EC38C7A922E /* Debug */,
+				7310504248CD465DB5332840 /* MinSizeRel */,
+				750328C9F0E0433DB70FFE07 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		262B3BCF555849EF9F4F0431 /* Build configuration list for PBXAggregateTarget "genvers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FF0FA3A0B234035AADBA84A /* Release */,
+				DAFCE3B22A2940F19F066497 /* Debug */,
+				975C606532FE4AECA741653E /* MinSizeRel */,
+				3298A95C6A6F4168B37C51B4 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41A8B9B4421E4D71A0CEBC13 /* Build configuration list for PBXNativeTarget "png_framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A07EF0755AE8429BA76A2C0F /* Release */,
+				7AC10061A5744A32ADDD4D58 /* Debug */,
+				2C7E578109644556A1412108 /* MinSizeRel */,
+				F4AA8BE4F13749E1A632BF06 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44BDC8EB7D0C4350950D5AFB /* Build configuration list for PBXNativeTarget "pngimage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33245C566B0F45B1AEB9D818 /* Release */,
+				B6AEEE286A3D4AD392C187BC /* Debug */,
+				C02EA798B85348CD9E3A4A40 /* MinSizeRel */,
+				95D02F05C982484FBB2DFD1F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		518F0269B28C417BB7EE8C6A /* Build configuration list for PBXNativeTarget "pngunknown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EB727ED19D14B679AE867CE /* Release */,
+				16EAA8DA19FE4050A7D491A2 /* Debug */,
+				690842FB06024DA0B7385A2A /* MinSizeRel */,
+				C2690ADC3F8349B4B7A3668B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5289B59188DE4933B6056D0D /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F39FDB19F5A446EB98F96174 /* Release */,
+				40D0D96B119D4714A027EB49 /* Debug */,
+				0848F8226348412CBC06C3FD /* MinSizeRel */,
+				13AFF2B44FE145B5BE3251CD /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5819B014FFAC427690633C23 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6666316B88A345CD8EFE2E19 /* Release */,
+				E11C745C24914AC78FBDF9A9 /* Debug */,
+				CCC4EAF981CB4B9A895A1DCA /* MinSizeRel */,
+				64EB0DBD539043EDA51DC6CD /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59AFE3B565CF4093B1B7BD2A /* Build configuration list for PBXNativeTarget "png_static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D632AAA72BD049359900D615 /* Release */,
+				B650D432C37A4C418DDD752A /* Debug */,
+				C7EC925D5EAA48D4AFACC1D1 /* MinSizeRel */,
+				B993F2898A3C4D9A832422E4 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6841805F05CA4F4EAEB7581E /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D9E194C15584B2B8F720A68 /* Release */,
+				D968C0389FAE45EEA0032F54 /* Debug */,
+				B3432F0E273146D0A1A0DDAE /* MinSizeRel */,
+				91A7B26C1DCD485B83AEDFC7 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D41C75DD0E84E60A2197EF1 /* Build configuration list for PBXNativeTarget "pngfix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB66CD9AFDBC47C3B2342547 /* Release */,
+				3279104B90DC455B93D0B07A /* Debug */,
+				576F2110B47041F786252EC3 /* MinSizeRel */,
+				3511F0980FFB446E9411C633 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83698006932A40368C04EBFD /* Build configuration list for PBXNativeTarget "png" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2485FE8AF9F44E097730E98 /* Release */,
+				8F0E4593926D4053811CF8D3 /* Debug */,
+				5EA27157F817430B8A433018 /* MinSizeRel */,
+				C7ABAAECB51E4B93A0CF2423 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		873276A3788A4EEBA9A07E18 /* Build configuration list for PBXNativeTarget "pngtest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B180AB77C5D14C81BC038328 /* Release */,
+				52678FEC59C74A6883379FD3 /* Debug */,
+				8A99D67495764A9C9C6D362D /* MinSizeRel */,
+				3B3360FA7492477786822224 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		903354B75B5E4DAE8DE83370 /* Build configuration list for PBXAggregateTarget "gensym" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C183E9DC35C451F8C14E41B /* Release */,
+				FE24B9CE0E564D87A224ACE8 /* Debug */,
+				085FD40F20BA4A92A64D3061 /* MinSizeRel */,
+				1B4F8753ABFA4353B2422857 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8E1D089A877455F9FDDC7FD /* Build configuration list for PBXNativeTarget "pngstest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				221178A4F8B8453690718C5B /* Release */,
+				83EB369D53A8470495F11763 /* Debug */,
+				F3F5F435574648BD8A9F4FF5 /* MinSizeRel */,
+				92B97B7E124B43C087A9FC23 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA86952E488F48078F40E493 /* Build configuration list for PBXNativeTarget "pngvalid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF126569E498431F955C2FAD /* Release */,
+				9BB2F90AA9C74ADFAD12B4E1 /* Debug */,
+				E607D61463C94E1B8FE267A5 /* MinSizeRel */,
+				6746FD7353E8449281C23300 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCD2FA49CE3A4D699D1E8FA9 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56501574C482409CA9BE3EED /* Release */,
+				83C9B3D6022C4AFE9A6F170F /* Debug */,
+				A98805A76AE447B0A2C4102C /* MinSizeRel */,
+				3F09CB98BAF14D1E8FE19A6C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE3438423849489B909D16CD /* Build configuration list for PBXAggregateTarget "genprebuilt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6202F675EF91436C829245D5 /* Release */,
+				AF4DB49488644AD5A3D62C5A /* Debug */,
+				CD96DF35587949FC86FD0D2F /* MinSizeRel */,
+				6B26CB30D28147A686789D15 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E768C6B716524A98823C7E7A /* Build configuration list for PBXProject "libpng" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C57A0F12F444B5593ECF625 /* Release */,
+				AB0EE774B6D84BC0BAA5EEB9 /* Debug */,
+				0E04343BF21C4256AC237A23 /* MinSizeRel */,
+				3F9FE9D682A84EB1B130AB1F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF09BE5C4AAA46C1925A2BA5 /* Build configuration list for PBXAggregateTarget "genfiles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB3F1FED06524DA4A922EEE3 /* Release */,
+				EDB67298ECD74858B8A738EC /* Debug */,
+				37775E51D38A4FBDAE4874E9 /* MinSizeRel */,
+				D15F7853083047EC80C1CD48 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3FA6BDDAA304D5E8618039E /* Build configuration list for PBXAggregateTarget "symbol-check" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E519181F3E62476C999A5B0D /* Release */,
+				4F8834BDBFE34B7FB4CCA030 /* Debug */,
+				FF5C1F0B8CFB4B09A11646B5 /* MinSizeRel */,
+				064AB6C2991C4DC1A4F8C7AE /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 051716F8BE704B9786BB0D09 /* Project object */;
+}
